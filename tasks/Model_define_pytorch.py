@@ -18,93 +18,91 @@ import torch.nn.functional as F
 from torch.utils.data import Dataset
 
 
-# This part implement the quantization and dequantization operations.
-# The output of the encoder must be the bitstream.
-def Num2Bit(Num, B):
-    Num_ = Num.type(torch.uint8)
-
-    def integer2bit(integer, num_bits=B * 2):
-        dtype = integer.type()
-        exponent_bits = -torch.arange(-(num_bits - 1), 1).type(dtype)
-        exponent_bits = exponent_bits.repeat(integer.shape + (1,))
-        out = integer.unsqueeze(-1) // 2 ** exponent_bits
-        return (out - (out % 1)) % 2
-
-    bit = integer2bit(Num_)
-    bit = (bit[:, :, B:]).reshape(-1, Num_.shape[1] * B)
-    return bit.type(torch.float32)
-
-
-def Bit2Num(Bit, B):
-    Bit_ = Bit.type(torch.float32)
-    Bit_ = torch.reshape(Bit_, [-1, int(Bit_.shape[1] / B), B])
-    num = torch.zeros(Bit_[:, :, 1].shape).cuda()
-    for i in range(B):
-        num = num + Bit_[:, :, i] * 2 ** (B - 1 - i)
-    return num
-
-
-class Quantization(torch.autograd.Function):
-    @staticmethod
-    def forward(ctx, x, B):
-        ctx.constant = B
-        step = 2 ** B
-        out = torch.round(x * step - 0.5)
-        out = Num2Bit(out, B)
-        return out
-
-    @staticmethod
-    def backward(ctx, grad_output):
-        # return as many input gradients as there were arguments.
-        # Gradients of constant arguments to forward must be None.
-        # Gradient of a number is the sum of its B bits.
-        b, _ = grad_output.shape
-        grad_num = torch.sum(grad_output.reshape(b, -1, ctx.constant), dim=2) / ctx.constant
-        return grad_num, None
-
-
-class Dequantization(torch.autograd.Function):
-    @staticmethod
-    def forward(ctx, x, B):
-        ctx.constant = B
-        step = 2 ** B
-        out = Bit2Num(x, B)
-        out = (out + 0.5) / step
-        return out
-
-    @staticmethod
-    def backward(ctx, grad_output):
-        # return as many input gradients as there were arguments.
-        # Gradients of non-Tensor arguments to forward must be None.
-        # repeat the gradient of a Num for B time.
-        b, c = grad_output.shape
-        grad_output = grad_output.unsqueeze(2) / ctx.constant
-        grad_bit = grad_output.expand(b, c, ctx.constant)
-        return torch.reshape(grad_bit, (-1, c * ctx.constant)), None
-
-
-class QuantizationLayer(nn.Module):
-
-    def __init__(self, B):
-        super(QuantizationLayer, self).__init__()
-        self.B = B
-
-    def forward(self, x):
-        out = Quantization.apply(x, self.B)
-        return out
-
-
-class DequantizationLayer(nn.Module):
-
-    def __init__(self, B):
-        super(DequantizationLayer, self).__init__()
-        self.B = B
-
-    def forward(self, x):
-        out = Dequantization.apply(x, self.B)
-        return out
-
+class NumBiter(nn.Module):
+    def __init__(self, b):
+        super().__init__()
+        self.b = b
+        base = 2**torch.arrange(b)
+        self.register_buffer("base", base.unsqueeze(0).unsqueeze(1).long())
         
+    def to_bit(self, x):
+        b, n = x.shape
+        x = x.unsqueeze(-1) // self.base % 2
+        return x.view(b, -1)
+    
+    def to_num(self, x):
+        b = x.size(0)
+        x = x.view(b, -1, self.b)
+        x = x * self.base
+        x = x.sum(-1)
+        return x
+        
+
+class FloatBiter(nn.Module):
+    def __init__(self, b):
+        super().__init__()
+        self.b = b
+        int_base = 2**torch.arrange(2)
+        dot_base = 2**torch.arrange(1, b - 1)
+        self.register_buffer("int_base", int_base.unsqueeze(0).long())
+        self.register_buffer("dot_base", dot_base.unsqueeze(0).float())
+        
+    @torch.no_grad()
+    def to_bit(self, x):
+        x = x.unsqueeze(-1)
+        int_x = torch.log2(x).long()
+        int_code = int_x // self.int_base % 2
+        float_x = x / (2**int_x).float() - 1
+        float_code = (float_x * self.float_base).long() % 2
+        return torch.cat([int_code, float_code], -1)
+        
+    @torch.no_grad()
+    def to_float(self, x):
+        int_code, float_code = x[:, :2], x[:, 2:]
+        int_x = (int_code * self.int_base).sum(-1)
+        int_x = (2**int_x).float()
+        float_x = (float_code.float() / self.float_base).sum(-1)
+        return (float_x + 1) * int_x
+
+    def forward(self, x):
+        bits = self.to_bit(x)
+        x1 = self.to_float(bits)
+        return (x1 - x).detach() + x
+        
+
+
+class VQ(nn.Module):
+    def __init__(self, b, dim):
+        k = 2**b
+        self.k = k
+        self.dim = dim
+        embed = torch.randn(k, dim)
+        self.embed = nn.Parameter(embed)
+        self.num_biter = NumBiter(b)
+        
+    @torch.no_grad()
+    def quant(self, x):
+        dist = x.unsqueeze(-1) - self.embed.unsqueeze(0).unsqueeze(1)
+        _, ind = dist.pow(2).sum(-1).min(-1)
+        bits = self.num_biter.to_bit(ind)
+        return bits
+    
+    @torch.no_grad()
+    def dequant(self, x):
+        x = self.num_biter.to_num(x)
+        return F.embedding(x, self.embed)
+    
+    def forward(self, x):
+        # x: (b, n, dim)
+        dist = x.unsqueeze(-1) - self.embed.unsqueeze(0).unsqueeze(1)
+        _, ind = dist.pow(2).sum(-1).min(-1) # (b, n)
+        qx = F.embedding(ind, self.embed) # (b, n, dim)
+        
+        loss1 = (qx - x.detach()).pow(2).mean()
+        loss2 = (qx.detach() - x).pow(2).mean()
+        return (qx - x).detach() + x, loss1, loss2
+
+
 class MyLoss(nn.Module):
     def __init__(self, reduce=True):
         super().__init__()
@@ -165,62 +163,115 @@ class ChannelLinear(nn.Module):
             x = x.transpose(self.c, -1).contiguous()
         return x
         
-
-class Encoder(nn.Module):
-    B = 4
-
-    def __init__(self, feedback_bits):
-        super(Encoder, self).__init__()
+        
+class VQVAE(nn.Module):
+    def __init__(self, vq_b=9, vq_dim=32, vq_len=56, s_bit=8):
+        super().__init__()
+        self.s_bit = s_bit
+        self.sq = VQ(vq_b, vq_dim)
+        self.f16 = FloatBiter(s_bit)
+        
         self.encoder_blocks = nn.Sequential(
             nn.Linear(256, 128),
             MixerBlock(126, 128, (4., 4.)),
-            ChannelLinear(1, 126, 56),
-            MixerBlock(56, 128, (4., 4.)),
-            MixerBlock(56, 128, (4., 4.)),
-            nn.Linear(128, 32),
+            ChannelLinear(1, 126, vq_len),
+            MixerBlock(vq_len, 128, (4., 4.)),
+            MixerBlock(vq_len, 128, (4., 4.)),
+            nn.Linear(128, vq_dim),
         )
-        self.fc = nn.Linear(56 * 32, int(feedback_bits // self.B))
-        self.sig = nn.Sigmoid()
-        self.quantize = QuantizationLayer(self.B)
-
-    def forward(self, x):
-        b = x.size(0)
-        x = x - 0.5
-        x = x.permute(0, 2, 3, 1).contiguous().view(b, 126, 256)
-        x = self.encoder_blocks(x)
-        x = x.view(b, -1)
-        out = self.fc(x)
-        out = self.sig(out)
-        out = self.quantize(out)
-        return out
-
-
-class Decoder(nn.Module):
-    B = 4
-
-    def __init__(self, feedback_bits):
-        super(Decoder, self).__init__()
-        self.feedback_bits = feedback_bits
-        self.dequantize = DequantizationLayer(self.B)
-        self.fc = nn.Linear(int(feedback_bits // self.B), 56*32)
+        
         self.decoder_blocks = nn.Sequential(
-            nn.Linear(32, 256),
-            MixerBlock(56, 256, (4., 4.)),
-            ChannelLinear(1, 56, 126),
+            nn.Linear(vq_dim, 256),
+            MixerBlock(vq_len, 256, (4., 4.)),
+            ChannelLinear(1, vq_len, 126),
             MixerBlock(126, 256, (4., 4.)),
             MixerBlock(126, 256, (4., 4.)),
             nn.Linear(256, 256),
             nn.Tanh()
         )
         
+        def forward(self, x):
+            b = x.size(0)
+            x = x - 0.5
+            x = x.permute(0, 2, 3, 1).contiguous().view(b, 126, 256)
+            s = torch.norm(x.view(b, -1), dim=1)
+            s = torch.clamp(s, 1., 7.99)
+            s = self.f16(s)
+            s = s.unsqueeze(-1).unsqueeze(-1)
+            x = x / s
+            x = self.encoder_blocks(x)
+            qx, loss1, loss2 = self.sq(x)
+            out = self.decoder_blocks(qx)
+            out = out * s * 0.5 + 0.5
+            out = out.view(b, 126, 128, 2).permute(0, 3, 1, 2).contiguous()
+            if self.training:
+                return out, loss1, loss2
+            return out
+        
+
+class Encoder(nn.Module):
+
+    def __init__(self, feedback_bits, vq_b=9, vq_dim=32, vq_len=56, s_bit=8):
+        super(Encoder, self).__init__()
+        self.s_bit = s_bit
+        self.sq = VQ(vq_b, vq_dim)
+        self.f16 = FloatBiter(s_bit)
+        
+        self.encoder_blocks = nn.Sequential(
+            nn.Linear(256, 128),
+            MixerBlock(126, 128, (4., 4.)),
+            ChannelLinear(1, 126, vq_len),
+            MixerBlock(vq_len, 128, (4., 4.)),
+            MixerBlock(vq_len, 128, (4., 4.)),
+            nn.Linear(128, vq_dim),
+        )
+        
+    def quantize(self, x, s):
+        bits_x = self.sq.quant(x)
+        bits_s = self.f16.to_bit(s)
+        return torch.cat([bits_s, bits_x])
+
     def forward(self, x):
         b = x.size(0)
-        out = self.dequantize(x)
-        out = out.view(-1, int(self.feedback_bits // self.B))
-        out = self.fc(out)
-        out = out.view(-1, 56, 32)
+        x = x - 0.5
+        x = x.permute(0, 2, 3, 1).contiguous().view(b, 126, 256)
+        s = torch.norm(x.view(b, -1), dim=1)
+        s = torch.clamp(s, 1., 7.99)
+        s = self.f16(s)
+        x = x / s.unsqueeze(-1).unsqueeze(-1)
+        x = self.encoder_blocks(x)
+        return self.quantize(x, s)
+
+
+class Decoder(nn.Module):
+
+    def __init__(self, feedback_bits, vq_b=9, vq_dim=32, vq_len=56, s_bit=8):
+        super(Decoder, self).__init__()
+        self.s_bit = s_bit
+        self.sq = VQ(vq_b, vq_dim)
+        self.f16 = FloatBiter(s_bit)
+        
+        self.decoder_blocks = nn.Sequential(
+            nn.Linear(vq_dim, 256),
+            MixerBlock(vq_len, 256, (4., 4.)),
+            ChannelLinear(1, vq_len, 126),
+            MixerBlock(126, 256, (4., 4.)),
+            MixerBlock(126, 256, (4., 4.)),
+            nn.Linear(256, 256),
+            nn.Tanh()
+        )
+        
+    def dequantize(self, x):
+        s = self.f16(x[:, :self.s_bit])
+        out = self.sq.dequant(x[:, self.s_bit:])
+        return out, s
+        
+    def forward(self, x):
+        b = x.size(0)
+        out, s = self.dequantize(x)
         out = self.decoder_blocks(out)
-        out = out * 0.5 + 0.5
+        out = out * s * 0.5 + 0.5
+        out = torch.clamp(out, 0., 1.)
         out = out.view(b, 126, 128, 2).permute(0, 3, 1, 2).contiguous()
         return out
         

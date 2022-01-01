@@ -9,7 +9,7 @@ import torch
 from torch.nn.utils import clip_grad_norm_
 from torch.optim.lr_scheduler import LambdaLR
 
-from Model_define_pytorch import AutoEncoder, DatasetFolder, MyLoss, DatasetFolderTrain
+from Model_define_pytorch import AutoEncoder, DatasetFolder, MyLoss, DatasetFolderTrain, VQVAE
 from config import Logger, LOG_DIR
 
 os.environ["CUDA_VISIBLE_DEVICES"] = '0'
@@ -79,8 +79,30 @@ class DefaultCfg:
     num_workers = 4
     feedback_bits = 512
     save_dir = "./Modelsave"
+    model_name = "model.pth"
     warmup = 1000
-
+    vq_b = 9
+    vq_dim = 32
+    vq_len = 56
+    s_bit = 8
+    
+    
+def trans_model(cfg):
+    model_name = os.path.join(cfg.save_dir, "ema_" + cfg.model_name)
+    model = VQVAE(cfg.vq_b, cfg.vq_dim, cfg.vq_len, cfg.s_bit)
+    model.load_state_dict(torch.load(model_name))
+    save_model = AutoEncoder(cfg.feedback_bits)
+    save_model.encoder.encoder_blocks = model.encoder_blocks
+    save_model.encoder.sq = model.sq
+    save_model.encoder.f16 = model.f16
+    save_model.decoder.decoder_blocks = model.decoder_blocks
+    save_model.decoder.sq = model.sq
+    save_model.decoder.f16 = model.f16
+    model_encoder_save_path = os.path.join(cfg.save_dir, "encoder.pth.tar")
+    model_decoder_save_path = os.path.join(cfg.save_dir, "decoder.pth.tar")
+    torch.save({'state_dict': save_model.encoder.state_dict(), }, model_encoder_save_path)
+    torch.save({'state_dict': save_model.decoder.state_dict(), }, model_decoder_save_path)
+    
 
 def read_data(data_load_address='../train'):
     mat = scio.loadmat(data_load_address + '/Htrain.mat')
@@ -96,9 +118,10 @@ def read_data(data_load_address='../train'):
     return x_train, x_test
 
 
-def validate(best_loss, test_loader, model, criterion, save_dir, prefix=""):
-    model_encoder_save_path = os.path.join(save_dir, prefix + "encoder.pth.tar")
-    model_decoder_save_path = os.path.join(save_dir, prefix + "decoder.pth.tar")
+def validate(best_loss, test_loader, model, criterion, save_dir, model_name, prefix=""):
+    # model_encoder_save_path = os.path.join(save_dir, prefix + "encoder.pth.tar")
+    # model_decoder_save_path = os.path.join(save_dir, prefix + "decoder.pth.tar")
+    model_path = os.path.join(save_dir, prefix + model_name)
     total_loss = 0
     nums = 0
     with torch.no_grad():
@@ -108,16 +131,18 @@ def validate(best_loss, test_loader, model, criterion, save_dir, prefix=""):
             total_loss += criterion(output, input_tensor).item() * input_tensor.size(0)
             nums += input_tensor.size(0)
         average_loss = total_loss / nums
-        LOGGER.info(f"average_loss={average_loss}")
+        LOGGER.info(f"average_loss={average_loss:.6f}, best_loss=best_loss:.6f")
         if average_loss < best_loss:
-            torch.save({'state_dict': model.encoder.state_dict(), }, model_encoder_save_path)
-            torch.save({'state_dict': model.decoder.state_dict(), }, model_decoder_save_path)
+            # torch.save({'state_dict': model.encoder.state_dict(), }, model_encoder_save_path)
+            # torch.save({'state_dict': model.decoder.state_dict(), }, model_decoder_save_path)
+            torch.save(model.state_dict(), model_path)
             LOGGER.info("Model saved")
             best_loss = average_loss
     return best_loss
 
 
 def train(cfg: DefaultCfg, x_train, x_test):
+    set_seed(cfg.seed)
     os.makedirs(cfg.save_dir, exist_ok=True)
     train_dataset = DatasetFolderTrain(x_train, training=True)
     train_loader = torch.utils.data.DataLoader(
@@ -128,7 +153,8 @@ def train(cfg: DefaultCfg, x_train, x_test):
         test_dataset, batch_size=cfg.batch_size, shuffle=False,
         num_workers=cfg.num_workers, pin_memory=True)
 
-    model = AutoEncoder(cfg.feedback_bits)
+    # model = AutoEncoder(cfg.feedback_bits)
+    model = VQVAE(cfg.vq_b, cfg.vq_dim, cfg.vq_len, cfg.s_bit)
     model.to(device)
     criterion = MyLoss().to(device)
     optimizer = torch.optim.AdamW(model.parameters(),
@@ -147,14 +173,13 @@ def train(cfg: DefaultCfg, x_train, x_test):
     ema_best_loss = 1
     LOGGER.info("start train")
     for epoch in range(cfg.epochs):
-        LOGGER.info("###########")
-        LOGGER.info(f"epoch {epoch}")
         epoch_start_time = time.time()
         model.train()
         for i, input_tensor in enumerate(train_loader):
             input_tensor = input_tensor.to(device)
-            output = model(input_tensor)
-            loss = criterion(output, input_tensor)
+            output, loss1, loss2 = model(input_tensor)
+            loss0 = criterion(output, input_tensor)
+            loss = loss0 + loss1 + loss2 * 0.25
             optimizer.zero_grad()
             loss.backward()
             clip_grad_norm_(model.parameters(), 10.)
@@ -162,17 +187,22 @@ def train(cfg: DefaultCfg, x_train, x_test):
             scheduler.step()
             if ema_start:
                 ema.update()
+            if i == 0:
+                LOGGER.info(f'Epoch: [epoch]\t Loss {loss0:.6f} Loss2 {loss2:.6f}')
 
         model.eval()
-        best_loss = validate(best_loss, test_loader, model, criterion, cfg.save_dir, prefix="")
-        LOGGER.info(f"best_loss={best_loss}")
+        best_loss = validate(best_loss, test_loader, model, criterion, 
+                             cfg.save_dir, cfg.model_name, prefix="")
+        LOGGER.info(f"best_loss={best_loss} cost {time.time() - epoch_start_time}s")
         if ema_start:
             ema.apply_shadow()
-            ema_best_loss = validate(ema_best_loss, test_loader, model, criterion, cfg.save_dir, prefix="ema_")
-            LOGGER.info(f"ema_best_loss={best_loss}")
+            ema_best_loss = validate(ema_best_loss, test_loader, model, 
+                                     criterion, cfg.save_dir, cfg.model_name, 
+                                     prefix="ema_")
             ema.restore()
-        LOGGER.info(f"cost {time.time() - epoch_start_time}s")
         LOGGER.info("###########")
+        
+    trans_model(cfg)
 
 
 def main():
