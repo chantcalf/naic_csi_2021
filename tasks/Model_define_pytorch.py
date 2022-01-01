@@ -189,7 +189,7 @@ class Encoder(nn.Module):
         x = x.permute(0, 2, 3, 1).contiguous().view(b, 126, 256)
         x = self.encoder_blocks(x)
         x = x.view(b, -1)
-        out = self.fc(out)
+        out = self.fc(x)
         out = self.sig(out)
         out = self.quantize(out)
         return out
@@ -203,7 +203,6 @@ class Decoder(nn.Module):
         self.feedback_bits = feedback_bits
         self.dequantize = DequantizationLayer(self.B)
         self.fc = nn.Linear(int(feedback_bits // self.B), 56*32)
-    
         self.decoder_blocks = nn.Sequential(
             nn.Linear(32, 256),
             MixerBlock(56, 256, (4., 4.)),
@@ -218,7 +217,7 @@ class Decoder(nn.Module):
         b = x.size(0)
         out = self.dequantize(x)
         out = out.view(-1, int(self.feedback_bits // self.B))
-        out = self.sig(self.fc(out))
+        out = self.fc(out)
         out = out.view(-1, 56, 32)
         out = self.decoder_blocks(out)
         out = out * 0.5 + 0.5
@@ -226,7 +225,7 @@ class Decoder(nn.Module):
         return out
         
 
-class DatasetFolder(Dataset):
+class DatasetFolderTrain(Dataset):
 
     def __init__(self, matData, training=True):
         self.matdata = matData
