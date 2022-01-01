@@ -10,7 +10,7 @@ from torch.nn.utils import clip_grad_norm_
 from torch.optim.lr_scheduler import LambdaLR
 
 from Model_define_pytorch import AutoEncoder, DatasetFolder, MyLoss, DatasetFolderTrain
-from config import Logger, LOG_DIR
+from config import Logger, LOG_DIR, TRAIN_DATA_DIR
 
 os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 
@@ -176,7 +176,7 @@ def train(cfg: DefaultCfg, x_train, x_test):
 
 
 def main():
-    x_train, x_test = read_data('../train')
+    x_train, x_test = read_data(TRAIN_DATA_DIR)
     cfg = DefaultCfg()
     train(cfg, x_train, x_test)
 

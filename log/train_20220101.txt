@@ -1,0 +1,1929 @@
+2022-01-01 20:16:57,699 - G:/naic_csi_2021/tasks/train.py[line:90] - INFO: (8000, 2, 126, 128)
+2022-01-01 20:16:58,991 - G:/naic_csi_2021/tasks/train.py[line:95] - INFO: (2000, 2, 126, 128)
+2022-01-01 20:17:01,276 - G:/naic_csi_2021/tasks/train.py[line:148] - INFO: start train
+2022-01-01 20:17:01,276 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:17:01,276 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 0
+2022-01-01 20:17:32,382 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=2.5479107418060303
+2022-01-01 20:17:32,382 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:17:37,973 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=78.57433056640625
+2022-01-01 20:17:37,973 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:17:37,973 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 36.6970112323761s
+2022-01-01 20:17:37,973 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:17:37,974 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:17:37,974 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 1
+2022-01-01 20:18:09,270 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.1627838764190674
+2022-01-01 20:18:09,270 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:18:14,772 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=39.653613983154294
+2022-01-01 20:18:14,772 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:18:14,773 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 36.79899978637695s
+2022-01-01 20:18:14,773 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:18:14,773 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:18:14,773 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 2
+2022-01-01 20:18:44,865 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0785542058944702
+2022-01-01 20:18:44,865 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:18:50,413 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=18.737929595947264
+2022-01-01 20:18:50,413 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:18:50,413 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 35.64049983024597s
+2022-01-01 20:18:50,413 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:18:50,413 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:18:50,414 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 3
+2022-01-01 20:19:22,166 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0770161037445067
+2022-01-01 20:19:22,166 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:19:29,039 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=8.96256209564209
+2022-01-01 20:19:29,039 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:19:29,039 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 38.62550115585327s
+2022-01-01 20:19:29,040 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:19:29,040 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:19:29,040 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 4
+2022-01-01 20:20:02,921 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.050931872367859
+2022-01-01 20:20:02,921 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:20:08,740 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=4.518641326904297
+2022-01-01 20:20:08,740 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:20:08,740 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 39.7004976272583s
+2022-01-01 20:20:08,740 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:20:08,740 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:20:08,741 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 5
+2022-01-01 20:20:47,183 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.035612424850464
+2022-01-01 20:20:47,183 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:20:53,314 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=2.6077978439331053
+2022-01-01 20:20:53,314 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:20:53,315 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.57450032234192s
+2022-01-01 20:20:53,315 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:20:53,315 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:20:53,315 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 6
+2022-01-01 20:21:32,408 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0421116352081299
+2022-01-01 20:21:32,408 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:21:38,536 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.7724352807998658
+2022-01-01 20:21:38,536 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:21:38,537 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.220999002456665s
+2022-01-01 20:21:38,537 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:21:38,537 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:21:38,537 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 7
+2022-01-01 20:22:17,194 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0362026691436768
+2022-01-01 20:22:17,194 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:22:23,364 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.365587586402893
+2022-01-01 20:22:23,365 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:22:23,365 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.82849931716919s
+2022-01-01 20:22:23,365 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:22:23,365 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:22:23,365 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 8
+2022-01-01 20:23:15,333 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0236622953414918
+2022-01-01 20:23:15,334 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:23:23,783 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.174384437561035
+2022-01-01 20:23:23,783 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:23:23,784 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 60.4184992313385s
+2022-01-01 20:23:23,784 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:23:23,784 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:23:23,784 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 9
+2022-01-01 20:24:02,372 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0230886030197144
+2022-01-01 20:24:02,372 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:24:08,440 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0910155096054077
+2022-01-01 20:24:08,440 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:24:08,441 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.65650010108948s
+2022-01-01 20:24:08,441 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:24:08,441 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:24:08,441 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 10
+2022-01-01 20:24:47,841 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0242581129074098
+2022-01-01 20:24:47,841 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:24:54,148 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0508224802017212
+2022-01-01 20:24:54,148 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:24:54,148 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.707499265670776s
+2022-01-01 20:24:54,148 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:24:54,149 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:24:54,149 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 11
+2022-01-01 20:25:34,374 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0196314764022827
+2022-01-01 20:25:34,374 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:25:40,482 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0304953842163085
+2022-01-01 20:25:40,482 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:25:40,483 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.334003925323486s
+2022-01-01 20:25:40,483 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:25:40,483 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:25:40,483 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 12
+2022-01-01 20:26:20,026 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.014053846359253
+2022-01-01 20:26:20,026 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:26:26,100 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0191264896392822
+2022-01-01 20:26:26,100 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:26:26,101 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.61799716949463s
+2022-01-01 20:26:26,101 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:26:26,101 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:26:26,101 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 13
+2022-01-01 20:27:06,306 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0153173847198487
+2022-01-01 20:27:06,307 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:27:12,566 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.012993574142456
+2022-01-01 20:27:12,567 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:27:12,567 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.4664990901947s
+2022-01-01 20:27:12,567 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:27:12,567 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:27:12,567 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 14
+2022-01-01 20:27:50,480 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0114995908737183
+2022-01-01 20:27:50,481 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:27:56,446 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0107878179550172
+2022-01-01 20:27:56,446 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:27:56,446 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.87900352478027s
+2022-01-01 20:27:56,446 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:27:56,446 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:27:56,446 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 15
+2022-01-01 20:28:34,286 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0136632966995238
+2022-01-01 20:28:34,287 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:28:40,081 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0093444271087646
+2022-01-01 20:28:40,082 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:28:40,082 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.63549733161926s
+2022-01-01 20:28:40,082 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:28:40,082 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:28:40,082 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 16
+2022-01-01 20:29:17,265 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0096659383773803
+2022-01-01 20:29:17,266 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:29:23,437 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.00689337348938
+2022-01-01 20:29:23,437 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:29:23,438 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.35499811172485s
+2022-01-01 20:29:23,438 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:29:23,438 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:29:23,438 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 17
+2022-01-01 20:30:03,084 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0077097845077514
+2022-01-01 20:30:03,084 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:30:09,012 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0051665754318238
+2022-01-01 20:30:09,012 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:30:09,013 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.575000524520874s
+2022-01-01 20:30:09,013 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:30:09,013 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:30:09,013 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 18
+2022-01-01 20:30:46,941 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.007353394508362
+2022-01-01 20:30:46,941 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:30:53,033 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0041799669265747
+2022-01-01 20:30:53,033 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:30:53,034 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.02050042152405s
+2022-01-01 20:30:53,034 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:30:53,034 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:30:53,034 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 19
+2022-01-01 20:31:33,219 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0099429187774658
+2022-01-01 20:31:33,219 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:31:39,590 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.003157009124756
+2022-01-01 20:31:39,590 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:31:39,591 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.55649995803833s
+2022-01-01 20:31:39,591 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:31:39,591 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:31:39,591 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 20
+2022-01-01 20:32:18,890 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.005261263847351
+2022-01-01 20:32:18,890 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:32:24,933 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0020333614349366
+2022-01-01 20:32:24,934 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:32:24,934 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.343000650405884s
+2022-01-01 20:32:24,934 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:32:24,934 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:32:24,934 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 21
+2022-01-01 20:33:03,662 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.002452712059021
+2022-01-01 20:33:03,662 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=1
+2022-01-01 20:33:09,740 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0010402746200562
+2022-01-01 20:33:09,740 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=1
+2022-01-01 20:33:09,741 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.806501388549805s
+2022-01-01 20:33:09,741 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:33:09,741 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:33:09,741 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 22
+2022-01-01 20:33:48,304 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9921711654663086
+2022-01-01 20:33:48,350 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:33:48,350 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.9921711654663086
+2022-01-01 20:33:54,282 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0001433820724488
+2022-01-01 20:33:54,282 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.9921711654663086
+2022-01-01 20:33:54,283 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.542497396469116s
+2022-01-01 20:33:54,283 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:33:54,283 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:33:54,283 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 23
+2022-01-01 20:34:33,357 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9491914978027344
+2022-01-01 20:34:33,383 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:34:33,383 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.9491914978027344
+2022-01-01 20:34:39,435 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9976459593772888
+2022-01-01 20:34:39,458 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:34:39,458 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.9491914978027344
+2022-01-01 20:34:39,459 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.175501585006714s
+2022-01-01 20:34:39,459 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:34:39,459 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:34:39,459 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 24
+2022-01-01 20:35:21,917 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9415768675804138
+2022-01-01 20:35:21,943 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:35:21,943 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.9415768675804138
+2022-01-01 20:35:28,213 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9901427917480469
+2022-01-01 20:35:28,242 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:35:28,242 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.9415768675804138
+2022-01-01 20:35:28,243 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 48.78399968147278s
+2022-01-01 20:35:28,243 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:35:28,243 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:35:28,243 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 25
+2022-01-01 20:36:08,085 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.7974674544334411
+2022-01-01 20:36:08,125 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:36:08,125 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.7974674544334411
+2022-01-01 20:36:14,144 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9731374793052673
+2022-01-01 20:36:14,172 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:36:14,172 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.7974674544334411
+2022-01-01 20:36:14,172 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.9289984703064s
+2022-01-01 20:36:14,172 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:36:14,172 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:36:14,172 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 26
+2022-01-01 20:36:53,217 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.7524976043701171
+2022-01-01 20:36:53,250 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:36:53,250 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.7524976043701171
+2022-01-01 20:36:59,227 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9392975006103516
+2022-01-01 20:36:59,277 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:36:59,278 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.7524976043701171
+2022-01-01 20:36:59,278 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.10599946975708s
+2022-01-01 20:36:59,279 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:36:59,279 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:36:59,279 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 27
+2022-01-01 20:37:36,750 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.7192584328651428
+2022-01-01 20:37:36,774 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:37:36,774 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.7192584328651428
+2022-01-01 20:37:42,594 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.8906038947105408
+2022-01-01 20:37:42,617 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:37:42,617 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.7192584328651428
+2022-01-01 20:37:42,617 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.338501930236816s
+2022-01-01 20:37:42,618 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:37:42,618 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:37:42,618 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 28
+2022-01-01 20:38:16,040 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.7020986766815186
+2022-01-01 20:38:16,063 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:38:16,064 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.7020986766815186
+2022-01-01 20:38:22,132 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.8375274629592896
+2022-01-01 20:38:22,157 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:38:22,157 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.7020986766815186
+2022-01-01 20:38:22,158 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 39.53999590873718s
+2022-01-01 20:38:22,158 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:38:22,158 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:38:22,158 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 29
+2022-01-01 20:39:00,616 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6810893993377686
+2022-01-01 20:39:00,641 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:39:00,641 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6810893993377686
+2022-01-01 20:39:06,656 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.7885541262626647
+2022-01-01 20:39:06,679 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:39:06,679 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6810893993377686
+2022-01-01 20:39:06,680 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.52200365066528s
+2022-01-01 20:39:06,680 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:39:06,680 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:39:06,680 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 30
+2022-01-01 20:39:44,434 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6655063529014588
+2022-01-01 20:39:44,459 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:39:44,459 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6655063529014588
+2022-01-01 20:39:50,541 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.7465435118675232
+2022-01-01 20:39:50,565 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:39:50,565 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6655063529014588
+2022-01-01 20:39:50,566 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.88599610328674s
+2022-01-01 20:39:50,566 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:39:50,566 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:39:50,566 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 31
+2022-01-01 20:40:31,510 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.8069771833419799
+2022-01-01 20:40:31,510 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6655063529014588
+2022-01-01 20:40:37,566 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.740077730178833
+2022-01-01 20:40:37,590 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:40:37,590 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6655063529014588
+2022-01-01 20:40:37,591 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.024497509002686s
+2022-01-01 20:40:37,591 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:40:37,591 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:40:37,591 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 32
+2022-01-01 20:41:18,270 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.7158785543441772
+2022-01-01 20:41:18,270 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6655063529014588
+2022-01-01 20:41:24,497 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9043547711372375
+2022-01-01 20:41:24,497 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6655063529014588
+2022-01-01 20:41:24,498 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.90700078010559s
+2022-01-01 20:41:24,498 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:41:24,498 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:41:24,498 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 33
+2022-01-01 20:42:03,849 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6682917938232422
+2022-01-01 20:42:03,849 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6655063529014588
+2022-01-01 20:42:10,188 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9160998034477233
+2022-01-01 20:42:10,189 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6655063529014588
+2022-01-01 20:42:10,189 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.69100046157837s
+2022-01-01 20:42:10,189 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:42:10,190 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:42:10,190 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 34
+2022-01-01 20:42:49,038 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6529492106437683
+2022-01-01 20:42:49,062 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:42:49,062 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6529492106437683
+2022-01-01 20:42:55,286 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.8365179758071899
+2022-01-01 20:42:55,287 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6529492106437683
+2022-01-01 20:42:55,288 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.097999811172485s
+2022-01-01 20:42:55,288 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:42:55,288 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:42:55,288 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 35
+2022-01-01 20:43:33,406 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6458371810913086
+2022-01-01 20:43:33,432 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:43:33,432 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6458371810913086
+2022-01-01 20:43:39,309 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.7587115306854249
+2022-01-01 20:43:39,309 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6458371810913086
+2022-01-01 20:43:39,310 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.02199697494507s
+2022-01-01 20:43:39,310 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:43:39,310 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:43:39,310 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 36
+2022-01-01 20:44:14,595 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6397669920921326
+2022-01-01 20:44:14,620 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:44:14,620 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6397669920921326
+2022-01-01 20:44:20,633 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.7078112268447876
+2022-01-01 20:44:20,657 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:44:20,658 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6397669920921326
+2022-01-01 20:44:20,658 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 41.34800100326538s
+2022-01-01 20:44:20,658 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:44:20,658 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:44:20,658 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 37
+2022-01-01 20:44:57,510 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6349468693733216
+2022-01-01 20:44:57,533 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:44:57,533 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6349468693733216
+2022-01-01 20:45:03,723 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6760965762138367
+2022-01-01 20:45:03,747 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:45:03,747 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6349468693733216
+2022-01-01 20:45:03,747 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.08899736404419s
+2022-01-01 20:45:03,747 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:45:03,748 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:45:03,748 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 38
+2022-01-01 20:45:42,977 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6316181988716125
+2022-01-01 20:45:43,001 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:45:43,001 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6316181988716125
+2022-01-01 20:45:49,078 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.656087504863739
+2022-01-01 20:45:49,102 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:45:49,102 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6316181988716125
+2022-01-01 20:45:49,103 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.35499930381775s
+2022-01-01 20:45:49,103 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:45:49,103 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:45:49,103 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 39
+2022-01-01 20:46:27,065 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6303587279319763
+2022-01-01 20:46:27,089 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:46:27,089 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6303587279319763
+2022-01-01 20:46:33,194 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6429654803276063
+2022-01-01 20:46:33,218 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:46:33,218 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6303587279319763
+2022-01-01 20:46:33,218 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.1155002117157s
+2022-01-01 20:46:33,218 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:46:33,218 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:46:33,218 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 40
+2022-01-01 20:47:12,534 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6250205125808715
+2022-01-01 20:47:12,575 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:47:12,575 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6250205125808715
+2022-01-01 20:47:18,689 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.633828531742096
+2022-01-01 20:47:18,712 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:47:18,712 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6250205125808715
+2022-01-01 20:47:18,713 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.494503021240234s
+2022-01-01 20:47:18,713 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:47:18,713 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:47:18,713 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 41
+2022-01-01 20:47:57,312 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.620865924358368
+2022-01-01 20:47:57,356 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:47:57,356 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.620865924358368
+2022-01-01 20:48:03,300 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6270625052452088
+2022-01-01 20:48:03,353 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:48:03,354 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.620865924358368
+2022-01-01 20:48:03,354 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.64099478721619s
+2022-01-01 20:48:03,354 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:48:03,354 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:48:03,355 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 42
+2022-01-01 20:48:41,168 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6187035174369812
+2022-01-01 20:48:41,193 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:48:41,193 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6187035174369812
+2022-01-01 20:48:47,419 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6214743843078613
+2022-01-01 20:48:47,447 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:48:47,447 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6187035174369812
+2022-01-01 20:48:47,447 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.092496395111084s
+2022-01-01 20:48:47,447 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:48:47,447 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:48:47,447 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 43
+2022-01-01 20:49:26,034 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6135547070503234
+2022-01-01 20:49:26,057 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:49:26,057 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.6135547070503234
+2022-01-01 20:49:31,788 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6167309226989746
+2022-01-01 20:49:31,815 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:49:31,815 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.6135547070503234
+2022-01-01 20:49:31,816 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.368502378463745s
+2022-01-01 20:49:31,816 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:49:31,816 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:49:31,816 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 44
+2022-01-01 20:50:11,060 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.611513973236084
+2022-01-01 20:50:11,085 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:50:11,085 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.611513973236084
+2022-01-01 20:50:17,412 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6122197451591491
+2022-01-01 20:50:17,441 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:50:17,442 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.611513973236084
+2022-01-01 20:50:17,442 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.626001596450806s
+2022-01-01 20:50:17,443 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:50:17,443 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:50:17,443 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 45
+2022-01-01 20:50:57,019 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.604865222454071
+2022-01-01 20:50:57,042 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:50:57,042 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.604865222454071
+2022-01-01 20:51:03,020 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6078736147880555
+2022-01-01 20:51:03,044 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:51:03,045 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.604865222454071
+2022-01-01 20:51:03,045 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.60199761390686s
+2022-01-01 20:51:03,045 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:51:03,045 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:51:03,045 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 46
+2022-01-01 20:51:45,435 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6064721322059632
+2022-01-01 20:51:45,435 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.604865222454071
+2022-01-01 20:51:51,791 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.6037067770957947
+2022-01-01 20:51:51,815 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:51:51,816 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.604865222454071
+2022-01-01 20:51:51,816 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 48.77100157737732s
+2022-01-01 20:51:51,816 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:51:51,816 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:51:51,817 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 47
+2022-01-01 20:52:30,488 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5966994900703431
+2022-01-01 20:52:30,513 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:52:30,513 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5966994900703431
+2022-01-01 20:52:36,652 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5995119738578797
+2022-01-01 20:52:36,677 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:52:36,678 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5966994900703431
+2022-01-01 20:52:36,678 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.861501693725586s
+2022-01-01 20:52:36,678 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:52:36,678 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:52:36,678 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 48
+2022-01-01 20:53:14,149 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5940699372291565
+2022-01-01 20:53:14,172 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:53:14,173 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5940699372291565
+2022-01-01 20:53:20,326 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5953523254394532
+2022-01-01 20:53:20,360 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:53:20,360 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5940699372291565
+2022-01-01 20:53:20,361 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.6824996471405s
+2022-01-01 20:53:20,361 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:53:20,361 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:53:20,361 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 49
+2022-01-01 20:53:58,803 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.617735209941864
+2022-01-01 20:53:58,803 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5940699372291565
+2022-01-01 20:54:04,897 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5914245057106018
+2022-01-01 20:54:04,922 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:54:04,922 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5940699372291565
+2022-01-01 20:54:04,923 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.56199908256531s
+2022-01-01 20:54:04,923 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:54:04,923 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:54:04,923 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 50
+2022-01-01 20:54:44,466 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5938843722343445
+2022-01-01 20:54:44,490 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:54:44,490 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5938843722343445
+2022-01-01 20:54:50,973 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5906695685386658
+2022-01-01 20:54:50,998 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:54:50,998 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5938843722343445
+2022-01-01 20:54:50,999 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.076000452041626s
+2022-01-01 20:54:50,999 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:54:50,999 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:54:50,999 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 51
+2022-01-01 20:55:26,457 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5906223974227905
+2022-01-01 20:55:26,483 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:55:26,483 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5906223974227905
+2022-01-01 20:55:32,277 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5872485175132751
+2022-01-01 20:55:32,326 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:55:32,326 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5906223974227905
+2022-01-01 20:55:32,327 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 41.32800102233887s
+2022-01-01 20:55:32,327 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:55:32,327 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:55:32,327 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 52
+2022-01-01 20:56:03,187 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5826875343322754
+2022-01-01 20:56:03,210 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:56:03,210 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5826875343322754
+2022-01-01 20:56:08,820 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.583257652759552
+2022-01-01 20:56:08,844 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:56:08,844 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5826875343322754
+2022-01-01 20:56:08,844 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 36.51699948310852s
+2022-01-01 20:56:08,844 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:56:08,844 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:56:08,845 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 53
+2022-01-01 20:56:40,395 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5775139665603638
+2022-01-01 20:56:40,416 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:56:40,416 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5775139665603638
+2022-01-01 20:56:45,977 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5791540718078614
+2022-01-01 20:56:46,000 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:56:46,000 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5775139665603638
+2022-01-01 20:56:46,001 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 37.155999183654785s
+2022-01-01 20:56:46,001 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:56:46,001 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:56:46,001 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 54
+2022-01-01 20:57:15,956 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.572379548072815
+2022-01-01 20:57:15,978 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:57:15,978 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.572379548072815
+2022-01-01 20:57:21,485 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5746744961738587
+2022-01-01 20:57:21,507 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:57:21,508 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.572379548072815
+2022-01-01 20:57:21,508 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 35.507500886917114s
+2022-01-01 20:57:21,508 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:57:21,508 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:57:21,508 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 55
+2022-01-01 20:57:52,933 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5674077067375183
+2022-01-01 20:57:52,959 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:57:52,959 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5674077067375183
+2022-01-01 20:57:58,497 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5700499815940857
+2022-01-01 20:57:58,518 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:57:58,518 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5674077067375183
+2022-01-01 20:57:58,519 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 37.010499000549316s
+2022-01-01 20:57:58,519 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:57:58,519 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:57:58,519 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 56
+2022-01-01 20:58:28,485 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5605168013572693
+2022-01-01 20:58:28,509 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:58:28,509 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 20:58:34,109 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.5651416945457458
+2022-01-01 20:58:34,131 - G:/naic_csi_2021/tasks/train.py[line:115] - INFO: Model saved
+2022-01-01 20:58:34,131 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 20:58:34,131 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 35.61250019073486s
+2022-01-01 20:58:34,131 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:58:34,131 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:58:34,131 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 57
+2022-01-01 20:59:05,530 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.7684601659774781
+2022-01-01 20:59:05,530 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 20:59:11,253 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.7652891812324524
+2022-01-01 20:59:11,253 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 20:59:11,254 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 37.12249994277954s
+2022-01-01 20:59:11,254 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:59:11,254 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:59:11,254 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 58
+2022-01-01 20:59:42,700 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.000245231628418
+2022-01-01 20:59:42,700 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 20:59:48,434 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.234209662437439
+2022-01-01 20:59:48,434 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 20:59:48,435 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 37.18100047111511s
+2022-01-01 20:59:48,435 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 20:59:48,435 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 20:59:48,435 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 59
+2022-01-01 21:00:25,364 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9900180320739747
+2022-01-01 21:00:25,364 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:00:31,285 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.3567008085250853
+2022-01-01 21:00:31,285 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:00:31,286 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.85100054740906s
+2022-01-01 21:00:31,286 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:00:31,286 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:00:31,286 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 60
+2022-01-01 21:01:11,370 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.978300060749054
+2022-01-01 21:01:11,370 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:01:17,439 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.1405601377487182
+2022-01-01 21:01:17,439 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:01:17,440 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.15400195121765s
+2022-01-01 21:01:17,440 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:01:17,440 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:01:17,440 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 61
+2022-01-01 21:01:55,957 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9733898663520812
+2022-01-01 21:01:55,957 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:02:02,124 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.075654167175293
+2022-01-01 21:02:02,124 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:02:02,124 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.684000968933105s
+2022-01-01 21:02:02,124 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:02:02,124 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:02:02,124 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 62
+2022-01-01 21:02:39,661 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9710265440940857
+2022-01-01 21:02:39,661 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:02:45,638 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0339709606170655
+2022-01-01 21:02:45,638 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:02:45,639 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.51450181007385s
+2022-01-01 21:02:45,639 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:02:45,639 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:02:45,639 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 63
+2022-01-01 21:03:23,183 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9672944259643554
+2022-01-01 21:03:23,183 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:03:29,163 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0203729763031006
+2022-01-01 21:03:29,163 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:03:29,163 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.524497985839844s
+2022-01-01 21:03:29,163 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:03:29,163 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:03:29,163 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 64
+2022-01-01 21:04:07,971 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9646368250846863
+2022-01-01 21:04:07,971 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:04:14,341 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0149128103256226
+2022-01-01 21:04:14,342 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:04:14,342 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.17899990081787s
+2022-01-01 21:04:14,342 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:04:14,342 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:04:14,342 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 65
+2022-01-01 21:04:55,688 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9659893913269043
+2022-01-01 21:04:55,688 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:05:01,651 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0085866498947142
+2022-01-01 21:05:01,651 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:05:01,652 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.309499979019165s
+2022-01-01 21:05:01,652 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:05:01,652 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:05:01,652 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 66
+2022-01-01 21:05:38,421 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9625074200630188
+2022-01-01 21:05:38,421 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:05:44,700 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9991486754417419
+2022-01-01 21:05:44,700 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:05:44,701 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.04900121688843s
+2022-01-01 21:05:44,701 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:05:44,701 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:05:44,701 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 67
+2022-01-01 21:06:24,256 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9609865622520447
+2022-01-01 21:06:24,256 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:06:30,545 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9885631866455078
+2022-01-01 21:06:30,545 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:06:30,546 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.844499826431274s
+2022-01-01 21:06:30,546 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:06:30,546 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:06:30,546 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 68
+2022-01-01 21:07:10,819 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9588028302192688
+2022-01-01 21:07:10,819 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:07:16,978 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9786496253013611
+2022-01-01 21:07:16,979 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:07:16,979 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.433003187179565s
+2022-01-01 21:07:16,979 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:07:16,979 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:07:16,979 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 69
+2022-01-01 21:07:56,129 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9582498364448547
+2022-01-01 21:07:56,129 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:08:02,163 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.970286759853363
+2022-01-01 21:08:02,164 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:08:02,164 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.184996128082275s
+2022-01-01 21:08:02,164 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:08:02,164 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:08:02,164 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 70
+2022-01-01 21:08:40,436 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9563718113899231
+2022-01-01 21:08:40,436 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:08:46,651 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9629253668785095
+2022-01-01 21:08:46,652 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:08:46,652 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.4879994392395s
+2022-01-01 21:08:46,652 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:08:46,652 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:08:46,652 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 71
+2022-01-01 21:09:25,162 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9557274589538575
+2022-01-01 21:09:25,162 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:09:31,517 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9589671130180359
+2022-01-01 21:09:31,517 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:09:31,517 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.8650004863739s
+2022-01-01 21:09:31,517 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:09:31,517 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:09:31,517 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 72
+2022-01-01 21:10:10,457 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9534331750869751
+2022-01-01 21:10:10,457 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:10:16,455 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9556070413589478
+2022-01-01 21:10:16,455 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:10:16,456 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.93800091743469s
+2022-01-01 21:10:16,456 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:10:16,456 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:10:16,456 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 73
+2022-01-01 21:10:56,076 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9522009773254394
+2022-01-01 21:10:56,076 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:11:02,467 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9529542059898376
+2022-01-01 21:11:02,467 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:11:02,468 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.01149940490723s
+2022-01-01 21:11:02,468 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:11:02,468 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:11:02,468 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 74
+2022-01-01 21:11:45,245 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9524700245857238
+2022-01-01 21:11:45,245 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:11:51,637 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9508444490432739
+2022-01-01 21:11:51,637 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:11:51,638 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 49.170000076293945s
+2022-01-01 21:11:51,638 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:11:51,638 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:11:51,638 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 75
+2022-01-01 21:12:31,277 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.951282910823822
+2022-01-01 21:12:31,277 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:12:37,475 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.949060733795166
+2022-01-01 21:12:37,475 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:12:37,475 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.83750247955322s
+2022-01-01 21:12:37,475 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:12:37,475 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:12:37,476 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 76
+2022-01-01 21:13:17,219 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9971326155662537
+2022-01-01 21:13:17,219 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:13:23,812 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9632645573616028
+2022-01-01 21:13:23,812 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:13:23,813 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.336998462677s
+2022-01-01 21:13:23,813 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:13:23,813 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:13:23,813 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 77
+2022-01-01 21:14:06,771 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9924941573143006
+2022-01-01 21:14:06,771 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:14:13,515 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9879814314842225
+2022-01-01 21:14:13,515 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:14:13,516 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 49.7029983997345s
+2022-01-01 21:14:13,516 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:14:13,516 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:14:13,516 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 78
+2022-01-01 21:14:55,519 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9908273549079895
+2022-01-01 21:14:55,520 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:15:02,250 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.990833679676056
+2022-01-01 21:15:02,250 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:15:02,251 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 48.734501123428345s
+2022-01-01 21:15:02,251 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:15:02,251 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:15:02,251 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 79
+2022-01-01 21:15:43,304 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9910893249511719
+2022-01-01 21:15:43,304 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:15:49,756 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9923598794937134
+2022-01-01 21:15:49,756 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:15:49,757 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.506000995635986s
+2022-01-01 21:15:49,757 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:15:49,757 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:15:49,758 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 80
+2022-01-01 21:16:31,435 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9902820510864258
+2022-01-01 21:16:31,435 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:16:37,807 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9926487669944764
+2022-01-01 21:16:37,808 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:16:37,808 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 48.0505006313324s
+2022-01-01 21:16:37,809 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:16:37,809 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:16:37,809 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 81
+2022-01-01 21:17:18,979 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9906807479858398
+2022-01-01 21:17:18,979 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:17:25,373 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9927638559341431
+2022-01-01 21:17:25,373 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:17:25,374 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.56500029563904s
+2022-01-01 21:17:25,374 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:17:25,374 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:17:25,374 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 82
+2022-01-01 21:18:05,608 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9912347531318665
+2022-01-01 21:18:05,608 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:18:11,719 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9924085893630982
+2022-01-01 21:18:11,719 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:18:11,720 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.34600067138672s
+2022-01-01 21:18:11,720 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:18:11,720 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:18:11,720 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 83
+2022-01-01 21:18:52,233 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9912755436897278
+2022-01-01 21:18:52,233 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:18:58,365 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9921075911521912
+2022-01-01 21:18:58,365 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:18:58,366 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.646000146865845s
+2022-01-01 21:18:58,366 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:18:58,366 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:18:58,366 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 84
+2022-01-01 21:19:37,498 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9903587198257446
+2022-01-01 21:19:37,498 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:19:43,873 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9914564442634582
+2022-01-01 21:19:43,874 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:19:43,874 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.50850033760071s
+2022-01-01 21:19:43,874 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:19:43,874 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:19:43,874 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 85
+2022-01-01 21:20:24,507 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9911595339775086
+2022-01-01 21:20:24,508 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:20:30,716 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9906073298454284
+2022-01-01 21:20:30,716 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:20:30,717 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.84250020980835s
+2022-01-01 21:20:30,717 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:20:30,717 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:20:30,717 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 86
+2022-01-01 21:21:08,960 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9914851241111755
+2022-01-01 21:21:08,960 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:21:15,195 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9904419832229614
+2022-01-01 21:21:15,195 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:21:15,196 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.47899866104126s
+2022-01-01 21:21:15,196 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:21:15,196 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:21:15,196 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 87
+2022-01-01 21:21:55,529 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9916881065368652
+2022-01-01 21:21:55,529 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:22:01,907 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9903687710762024
+2022-01-01 21:22:01,907 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:22:01,908 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.712000370025635s
+2022-01-01 21:22:01,908 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:22:01,908 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:22:01,908 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 88
+2022-01-01 21:22:39,137 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9910734705924987
+2022-01-01 21:22:39,137 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:22:45,035 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9902201929092407
+2022-01-01 21:22:45,035 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:22:45,036 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.127501249313354s
+2022-01-01 21:22:45,036 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:22:45,036 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:22:45,036 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 89
+2022-01-01 21:23:22,182 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9918115129470825
+2022-01-01 21:23:22,182 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:23:28,293 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9903378376960754
+2022-01-01 21:23:28,294 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:23:28,294 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.25850009918213s
+2022-01-01 21:23:28,294 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:23:28,294 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:23:28,294 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 90
+2022-01-01 21:24:08,956 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9915621604919433
+2022-01-01 21:24:08,957 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:24:15,333 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9903229532241822
+2022-01-01 21:24:15,334 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:24:15,334 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.03999948501587s
+2022-01-01 21:24:15,334 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:24:15,334 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:24:15,334 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 91
+2022-01-01 21:24:55,777 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9914783325195312
+2022-01-01 21:24:55,777 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:25:02,163 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.990346345424652
+2022-01-01 21:25:02,163 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:25:02,164 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.82950043678284s
+2022-01-01 21:25:02,164 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:25:02,164 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:25:02,164 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 92
+2022-01-01 21:25:40,009 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9910604567527771
+2022-01-01 21:25:40,009 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:25:46,274 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.990326352596283
+2022-01-01 21:25:46,274 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:25:46,275 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.11050057411194s
+2022-01-01 21:25:46,275 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:25:46,275 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:25:46,275 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 93
+2022-01-01 21:26:26,837 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9913703966140747
+2022-01-01 21:26:26,837 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:26:33,276 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9902008032798767
+2022-01-01 21:26:33,276 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:26:33,277 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.00149989128113s
+2022-01-01 21:26:33,277 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:26:33,277 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:26:33,277 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 94
+2022-01-01 21:27:14,610 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9916125106811523
+2022-01-01 21:27:14,610 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:27:20,622 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9902710433006287
+2022-01-01 21:27:20,623 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:27:20,623 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.34649991989136s
+2022-01-01 21:27:20,623 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:27:20,623 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:27:20,624 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 95
+2022-01-01 21:27:59,686 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9918419342041016
+2022-01-01 21:27:59,687 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:28:05,540 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9902299933433533
+2022-01-01 21:28:05,540 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:28:05,541 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.91649794578552s
+2022-01-01 21:28:05,541 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:28:05,541 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:28:05,541 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 96
+2022-01-01 21:28:37,797 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9918065218925476
+2022-01-01 21:28:37,797 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:28:43,865 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9903619813919068
+2022-01-01 21:28:43,865 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:28:43,866 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 38.325000524520874s
+2022-01-01 21:28:43,866 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:28:43,866 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:28:43,866 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 97
+2022-01-01 21:29:18,956 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9921916785240174
+2022-01-01 21:29:18,956 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:29:25,347 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9904539260864258
+2022-01-01 21:29:25,348 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:29:25,348 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 41.48250079154968s
+2022-01-01 21:29:25,348 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:29:25,348 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:29:25,348 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 98
+2022-01-01 21:30:04,231 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9920396494865418
+2022-01-01 21:30:04,231 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:30:10,297 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9906016478538513
+2022-01-01 21:30:10,297 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:30:10,298 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.95000100135803s
+2022-01-01 21:30:10,299 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:30:10,299 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:30:10,299 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 99
+2022-01-01 21:30:48,370 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9924085130691528
+2022-01-01 21:30:48,371 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:30:54,480 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9907297940254212
+2022-01-01 21:30:54,481 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:30:54,481 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.18249988555908s
+2022-01-01 21:30:54,481 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:30:54,481 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:30:54,481 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 100
+2022-01-01 21:31:32,383 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9918099436759948
+2022-01-01 21:31:32,383 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:31:38,719 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9909861807823181
+2022-01-01 21:31:38,719 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:31:38,720 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.2384991645813s
+2022-01-01 21:31:38,720 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:31:38,720 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:31:38,720 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 101
+2022-01-01 21:32:20,913 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9921721353530883
+2022-01-01 21:32:20,913 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:32:26,982 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9910854568481445
+2022-01-01 21:32:26,982 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:32:26,982 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 48.26200032234192s
+2022-01-01 21:32:26,982 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:32:26,982 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:32:26,982 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 102
+2022-01-01 21:33:05,612 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9927214541435242
+2022-01-01 21:33:05,612 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:33:11,910 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9911396141052247
+2022-01-01 21:33:11,910 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:33:11,911 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.928000688552856s
+2022-01-01 21:33:11,911 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:33:11,911 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:33:11,911 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 103
+2022-01-01 21:33:51,242 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9925571064949036
+2022-01-01 21:33:51,242 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:33:56,873 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9912080039978027
+2022-01-01 21:33:56,873 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:33:56,874 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.96299982070923s
+2022-01-01 21:33:56,874 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:33:56,874 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:33:56,874 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 104
+2022-01-01 21:34:29,595 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9927974176406861
+2022-01-01 21:34:29,595 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:34:35,459 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.99126034116745
+2022-01-01 21:34:35,459 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:34:35,460 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 38.584999322891235s
+2022-01-01 21:34:35,460 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:34:35,460 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:34:35,460 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 105
+2022-01-01 21:35:07,006 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9932535791397095
+2022-01-01 21:35:07,006 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:35:12,813 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9914253726005554
+2022-01-01 21:35:12,814 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:35:12,814 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 37.35405492782593s
+2022-01-01 21:35:12,814 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:35:12,814 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:35:12,814 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 106
+2022-01-01 21:35:45,306 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9923753137588501
+2022-01-01 21:35:45,306 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:35:51,037 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9914308862686158
+2022-01-01 21:35:51,038 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:35:51,038 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 38.22399973869324s
+2022-01-01 21:35:51,038 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:35:51,038 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:35:51,038 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 107
+2022-01-01 21:36:23,380 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9927802505493164
+2022-01-01 21:36:23,380 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:36:29,223 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9915540132522583
+2022-01-01 21:36:29,224 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:36:29,224 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 38.186001777648926s
+2022-01-01 21:36:29,224 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:36:29,224 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:36:29,224 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 108
+2022-01-01 21:37:01,249 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9933855595588684
+2022-01-01 21:37:01,249 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:37:06,997 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9915985956192016
+2022-01-01 21:37:06,997 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:37:06,998 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 37.77349781990051s
+2022-01-01 21:37:06,998 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:37:06,998 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:37:06,998 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 109
+2022-01-01 21:37:43,805 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.993280400276184
+2022-01-01 21:37:43,805 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:37:49,796 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9917176852226257
+2022-01-01 21:37:49,796 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:37:49,796 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.7980055809021s
+2022-01-01 21:37:49,796 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:37:49,796 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:37:49,796 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 110
+2022-01-01 21:38:27,593 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9932938132286072
+2022-01-01 21:38:27,593 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:38:33,954 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9915936770439148
+2022-01-01 21:38:33,954 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:38:33,955 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.15800094604492s
+2022-01-01 21:38:33,955 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:38:33,955 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:38:33,955 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 111
+2022-01-01 21:39:18,396 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9930951089859009
+2022-01-01 21:39:18,397 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:39:24,986 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9916906714439392
+2022-01-01 21:39:24,986 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:39:24,987 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 51.031498432159424s
+2022-01-01 21:39:24,987 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:39:24,987 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:39:24,987 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 112
+2022-01-01 21:40:08,733 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9930716829299927
+2022-01-01 21:40:08,734 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:40:15,216 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9920199246406555
+2022-01-01 21:40:15,216 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:40:15,217 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 50.22949934005737s
+2022-01-01 21:40:15,217 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:40:15,217 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:40:15,217 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 113
+2022-01-01 21:40:59,935 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9928386235237121
+2022-01-01 21:40:59,935 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:41:06,452 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9920005984306336
+2022-01-01 21:41:06,452 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:41:06,452 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 51.23500180244446s
+2022-01-01 21:41:06,452 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:41:06,452 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:41:06,452 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 114
+2022-01-01 21:41:48,173 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9936038279533386
+2022-01-01 21:41:48,174 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:41:54,638 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9919553079605102
+2022-01-01 21:41:54,638 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:41:54,638 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 48.18599724769592s
+2022-01-01 21:41:54,638 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:41:54,639 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:41:54,639 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 115
+2022-01-01 21:42:37,358 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9930198330879212
+2022-01-01 21:42:37,358 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:42:44,094 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9918917398452759
+2022-01-01 21:42:44,094 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:42:44,094 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 49.45550322532654s
+2022-01-01 21:42:44,095 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:42:44,095 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:42:44,095 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 116
+2022-01-01 21:43:26,630 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.99247212266922
+2022-01-01 21:43:26,631 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:43:33,051 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9920181012153626
+2022-01-01 21:43:33,051 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:43:33,052 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 48.957000494003296s
+2022-01-01 21:43:33,052 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:43:33,052 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:43:33,052 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 117
+2022-01-01 21:44:14,661 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9930239796638489
+2022-01-01 21:44:14,662 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:44:21,111 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9917843813896179
+2022-01-01 21:44:21,111 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:44:21,111 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 48.05899977684021s
+2022-01-01 21:44:21,111 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:44:21,111 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:44:21,112 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 118
+2022-01-01 21:45:04,045 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9932609515190125
+2022-01-01 21:45:04,045 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:45:10,695 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9915824899673462
+2022-01-01 21:45:10,695 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:45:10,696 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 49.58400058746338s
+2022-01-01 21:45:10,696 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:45:10,696 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:45:10,696 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 119
+2022-01-01 21:45:53,838 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9936879801750184
+2022-01-01 21:45:53,838 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:46:00,388 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9917800483703614
+2022-01-01 21:46:00,388 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:46:00,389 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 49.692501068115234s
+2022-01-01 21:46:00,389 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:46:00,389 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:46:00,389 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 120
+2022-01-01 21:46:43,360 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9940656361579895
+2022-01-01 21:46:43,360 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:46:49,822 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9919748048782349
+2022-01-01 21:46:49,822 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:46:49,822 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 49.4334990978241s
+2022-01-01 21:46:49,822 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:46:49,822 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:46:49,822 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 121
+2022-01-01 21:47:31,873 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9941314010620117
+2022-01-01 21:47:31,873 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:47:38,435 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9922881164550781
+2022-01-01 21:47:38,436 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:47:38,436 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 48.61349892616272s
+2022-01-01 21:47:38,437 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:47:38,437 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:47:38,437 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 122
+2022-01-01 21:48:21,848 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9946572232246399
+2022-01-01 21:48:21,848 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:48:28,452 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9923696670532226
+2022-01-01 21:48:28,452 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:48:28,453 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 50.01600122451782s
+2022-01-01 21:48:28,453 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:48:28,453 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:48:28,453 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 123
+2022-01-01 21:49:11,203 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9947755060195923
+2022-01-01 21:49:11,204 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:49:17,732 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9925263228416443
+2022-01-01 21:49:17,733 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:49:17,733 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 49.280500173568726s
+2022-01-01 21:49:17,733 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:49:17,733 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:49:17,733 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 124
+2022-01-01 21:50:01,264 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9948599128723145
+2022-01-01 21:50:01,264 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:50:07,990 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9928632016181946
+2022-01-01 21:50:07,990 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:50:07,991 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 50.257500648498535s
+2022-01-01 21:50:07,991 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:50:07,991 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:50:07,991 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 125
+2022-01-01 21:50:49,026 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9948869524002075
+2022-01-01 21:50:49,026 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:50:55,456 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9930650291442871
+2022-01-01 21:50:55,456 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:50:55,456 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.464998722076416s
+2022-01-01 21:50:55,456 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:50:55,456 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:50:55,456 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 126
+2022-01-01 21:51:36,613 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9949024581909179
+2022-01-01 21:51:36,613 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:51:42,980 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9936087312698364
+2022-01-01 21:51:42,980 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:51:42,980 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.523998975753784s
+2022-01-01 21:51:42,980 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:51:42,980 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:51:42,980 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 127
+2022-01-01 21:52:24,389 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9946802105903626
+2022-01-01 21:52:24,390 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:52:30,620 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9935546793937683
+2022-01-01 21:52:30,621 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:52:30,621 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.64100432395935s
+2022-01-01 21:52:30,622 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:52:30,622 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:52:30,622 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 128
+2022-01-01 21:53:09,302 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9950796508789063
+2022-01-01 21:53:09,303 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:53:15,462 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9934957995414734
+2022-01-01 21:53:15,462 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:53:15,463 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.840999364852905s
+2022-01-01 21:53:15,463 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:53:15,463 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:53:15,463 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 129
+2022-01-01 21:53:56,178 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9948535208702087
+2022-01-01 21:53:56,178 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:54:02,553 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9936770777702332
+2022-01-01 21:54:02,553 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:54:02,554 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.09099864959717s
+2022-01-01 21:54:02,554 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:54:02,554 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:54:02,554 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 130
+2022-01-01 21:54:43,096 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9948504223823548
+2022-01-01 21:54:43,096 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:54:49,305 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9937280440330505
+2022-01-01 21:54:49,305 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:54:49,305 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.751500368118286s
+2022-01-01 21:54:49,305 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:54:49,306 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:54:49,306 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 131
+2022-01-01 21:55:31,147 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9949495329856872
+2022-01-01 21:55:31,147 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:55:37,641 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9937760248184204
+2022-01-01 21:55:37,641 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:55:37,641 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 48.33550047874451s
+2022-01-01 21:55:37,641 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:55:37,641 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:55:37,641 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 132
+2022-01-01 21:56:20,957 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9950481419563293
+2022-01-01 21:56:20,957 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:56:27,479 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.993665237903595
+2022-01-01 21:56:27,479 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:56:27,480 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 49.838499307632446s
+2022-01-01 21:56:27,480 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:56:27,480 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:56:27,480 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 133
+2022-01-01 21:57:09,777 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.995047287940979
+2022-01-01 21:57:09,777 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:57:16,454 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9936748919487
+2022-01-01 21:57:16,455 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:57:16,455 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 48.97500014305115s
+2022-01-01 21:57:16,455 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:57:16,455 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:57:16,455 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 134
+2022-01-01 21:57:58,096 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9951861081123352
+2022-01-01 21:57:58,096 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:58:04,268 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9936821184158325
+2022-01-01 21:58:04,268 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:58:04,269 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.81349992752075s
+2022-01-01 21:58:04,269 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:58:04,269 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:58:04,269 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 135
+2022-01-01 21:58:43,569 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9950113916397094
+2022-01-01 21:58:43,569 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:58:49,896 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.99393550491333
+2022-01-01 21:58:49,896 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:58:49,897 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.62850069999695s
+2022-01-01 21:58:49,897 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:58:49,897 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:58:49,897 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 136
+2022-01-01 21:59:30,444 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9954083113670349
+2022-01-01 21:59:30,445 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 21:59:36,932 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9940983505249024
+2022-01-01 21:59:36,932 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 21:59:36,933 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.03549814224243s
+2022-01-01 21:59:36,933 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 21:59:36,933 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 21:59:36,933 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 137
+2022-01-01 22:00:19,307 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9953828048706055
+2022-01-01 22:00:19,307 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:00:25,638 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9939942698478699
+2022-01-01 22:00:25,639 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:00:25,639 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 48.7060010433197s
+2022-01-01 22:00:25,639 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:00:25,639 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:00:25,639 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 138
+2022-01-01 22:01:05,866 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9952532963752747
+2022-01-01 22:01:05,866 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:01:12,524 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9941942672729492
+2022-01-01 22:01:12,524 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:01:12,525 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.88549757003784s
+2022-01-01 22:01:12,525 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:01:12,525 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:01:12,525 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 139
+2022-01-01 22:01:53,023 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9953111343383789
+2022-01-01 22:01:53,023 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:01:59,450 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9943884196281433
+2022-01-01 22:01:59,451 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:01:59,451 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.926000118255615s
+2022-01-01 22:01:59,451 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:01:59,451 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:01:59,451 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 140
+2022-01-01 22:02:40,053 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.995966805934906
+2022-01-01 22:02:40,054 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:02:46,322 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9943434600830078
+2022-01-01 22:02:46,322 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:02:46,323 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.87150001525879s
+2022-01-01 22:02:46,323 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:02:46,323 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:02:46,323 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 141
+2022-01-01 22:03:25,609 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9957201771736145
+2022-01-01 22:03:25,609 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:03:31,656 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9943143668174743
+2022-01-01 22:03:31,656 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:03:31,657 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.333500146865845s
+2022-01-01 22:03:31,657 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:03:31,657 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:03:31,657 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 142
+2022-01-01 22:04:10,582 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9955542998313904
+2022-01-01 22:04:10,582 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:04:16,691 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9945813102722167
+2022-01-01 22:04:16,692 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:04:16,692 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.03499889373779s
+2022-01-01 22:04:16,692 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:04:16,692 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:04:16,692 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 143
+2022-01-01 22:04:53,325 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9950996332168579
+2022-01-01 22:04:53,325 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:04:59,556 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9945648951530457
+2022-01-01 22:04:59,557 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:04:59,557 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.8650016784668s
+2022-01-01 22:04:59,557 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:04:59,557 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:04:59,558 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 144
+2022-01-01 22:05:39,560 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9955753817558288
+2022-01-01 22:05:39,561 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:05:45,679 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9945518689155579
+2022-01-01 22:05:45,679 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:05:45,680 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.1220018863678s
+2022-01-01 22:05:45,680 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:05:45,680 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:05:45,680 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 145
+2022-01-01 22:06:24,740 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=3.911667892456055
+2022-01-01 22:06:24,740 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:06:30,937 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.2925334100723267
+2022-01-01 22:06:30,937 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:06:30,938 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.25749945640564s
+2022-01-01 22:06:30,938 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:06:30,938 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:06:30,938 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 146
+2022-01-01 22:07:09,426 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0161176061630248
+2022-01-01 22:07:09,426 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:07:15,985 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=3.4674974575042725
+2022-01-01 22:07:15,985 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:07:15,986 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.047499895095825s
+2022-01-01 22:07:15,986 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:07:15,986 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:07:15,986 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 147
+2022-01-01 22:07:56,824 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.000683924674988
+2022-01-01 22:07:56,824 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:08:03,256 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=2.1919842853546143
+2022-01-01 22:08:03,256 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:08:03,257 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.27049994468689s
+2022-01-01 22:08:03,257 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:08:03,257 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:08:03,257 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 148
+2022-01-01 22:08:41,211 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0001437339782715
+2022-01-01 22:08:41,212 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:08:47,217 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.3080297241210936
+2022-01-01 22:08:47,218 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:08:47,218 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.960999727249146s
+2022-01-01 22:08:47,218 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:08:47,218 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:08:47,218 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 149
+2022-01-01 22:09:25,023 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9995111970901489
+2022-01-01 22:09:25,024 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:09:31,289 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.1150204286575318
+2022-01-01 22:09:31,289 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:09:31,290 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.072004556655884s
+2022-01-01 22:09:31,290 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:09:31,290 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:09:31,290 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 150
+2022-01-01 22:10:11,437 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0000057101249695
+2022-01-01 22:10:11,437 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:10:17,810 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0501794004440308
+2022-01-01 22:10:17,811 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:10:17,811 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.520498752593994s
+2022-01-01 22:10:17,811 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:10:17,811 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:10:17,811 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 151
+2022-01-01 22:10:58,028 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9990460019111633
+2022-01-01 22:10:58,028 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:11:04,439 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0182986316680909
+2022-01-01 22:11:04,439 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:11:04,440 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.62850022315979s
+2022-01-01 22:11:04,440 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:11:04,440 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:11:04,440 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 152
+2022-01-01 22:11:45,293 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9979642753601075
+2022-01-01 22:11:45,293 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:11:51,603 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.006738962173462
+2022-01-01 22:11:51,603 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:11:51,604 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 47.164000034332275s
+2022-01-01 22:11:51,604 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:11:51,604 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:11:51,604 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 153
+2022-01-01 22:12:31,915 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9978256001472473
+2022-01-01 22:12:31,915 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:12:38,061 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0025383234024048
+2022-01-01 22:12:38,061 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:12:38,062 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.45750141143799s
+2022-01-01 22:12:38,062 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:12:38,062 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:12:38,062 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 154
+2022-01-01 22:13:16,582 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9976493258476258
+2022-01-01 22:13:16,583 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:13:22,774 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0003905305862426
+2022-01-01 22:13:22,774 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:13:22,775 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.71249723434448s
+2022-01-01 22:13:22,775 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:13:22,775 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:13:22,775 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 155
+2022-01-01 22:13:57,889 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9975191082954407
+2022-01-01 22:13:57,889 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:14:03,979 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9990970277786255
+2022-01-01 22:14:03,979 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:14:03,980 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 41.20499897003174s
+2022-01-01 22:14:03,980 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:14:03,980 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:14:03,980 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 156
+2022-01-01 22:14:41,659 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9969448599815368
+2022-01-01 22:14:41,659 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:14:47,515 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9982211618423462
+2022-01-01 22:14:47,515 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:14:47,516 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.53549861907959s
+2022-01-01 22:14:47,516 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:14:47,516 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:14:47,516 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 157
+2022-01-01 22:15:23,667 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9969800271987915
+2022-01-01 22:15:23,668 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:15:29,774 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9976344652175904
+2022-01-01 22:15:29,775 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:15:29,775 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.25900101661682s
+2022-01-01 22:15:29,775 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:15:29,775 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:15:29,775 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 158
+2022-01-01 22:16:05,595 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9970973134040833
+2022-01-01 22:16:05,595 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:16:11,519 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.99717707157135
+2022-01-01 22:16:11,519 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:16:11,520 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 41.744499921798706s
+2022-01-01 22:16:11,520 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:16:11,520 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:16:11,520 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 159
+2022-01-01 22:16:46,922 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.996798641204834
+2022-01-01 22:16:46,922 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:16:53,062 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9968483138084412
+2022-01-01 22:16:53,062 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:16:53,063 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 41.542999505996704s
+2022-01-01 22:16:53,063 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:16:53,063 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:16:53,063 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 160
+2022-01-01 22:17:30,882 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9964739389419556
+2022-01-01 22:17:30,882 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:17:36,947 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.996535514831543
+2022-01-01 22:17:36,947 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:17:36,948 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.88449954986572s
+2022-01-01 22:17:36,948 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:17:36,948 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:17:36,948 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 161
+2022-01-01 22:18:11,553 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9965586967468262
+2022-01-01 22:18:11,553 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:18:17,404 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9963570408821106
+2022-01-01 22:18:17,404 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:18:17,404 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 40.456000328063965s
+2022-01-01 22:18:17,404 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:18:17,404 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:18:17,405 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 162
+2022-01-01 22:18:51,019 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9968403096199036
+2022-01-01 22:18:51,019 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:18:57,067 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9963215951919555
+2022-01-01 22:18:57,067 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:18:57,068 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 39.66300106048584s
+2022-01-01 22:18:57,068 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:18:57,068 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:18:57,068 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 163
+2022-01-01 22:19:35,293 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9966947360038757
+2022-01-01 22:19:35,293 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:19:41,836 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9961653633117675
+2022-01-01 22:19:41,836 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:19:41,837 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.769001960754395s
+2022-01-01 22:19:41,837 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:19:41,837 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:19:41,837 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 164
+2022-01-01 22:20:20,996 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9968284649848937
+2022-01-01 22:20:20,997 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:20:27,156 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9960695691108704
+2022-01-01 22:20:27,156 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:20:27,156 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.31899952888489s
+2022-01-01 22:20:27,156 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:20:27,157 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:20:27,157 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 165
+2022-01-01 22:21:04,662 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9964505739212036
+2022-01-01 22:21:04,662 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:21:10,673 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9961515889167786
+2022-01-01 22:21:10,673 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:21:10,673 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.51649880409241s
+2022-01-01 22:21:10,673 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:21:10,673 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:21:10,673 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 166
+2022-01-01 22:21:47,438 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9967055087089538
+2022-01-01 22:21:47,438 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:21:53,415 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9961369099617005
+2022-01-01 22:21:53,416 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:21:53,416 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.74300026893616s
+2022-01-01 22:21:53,416 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:21:53,416 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:21:53,416 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 167
+2022-01-01 22:22:31,203 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9962829451560974
+2022-01-01 22:22:31,204 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:22:37,362 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9960006265640259
+2022-01-01 22:22:37,362 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:22:37,363 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.94650220870972s
+2022-01-01 22:22:37,363 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:22:37,363 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:22:37,363 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 168
+2022-01-01 22:23:14,942 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9964026989936828
+2022-01-01 22:23:14,942 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:23:21,043 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9959270792007446
+2022-01-01 22:23:21,043 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:23:21,044 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.68099594116211s
+2022-01-01 22:23:21,044 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:23:21,044 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:23:21,044 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 169
+2022-01-01 22:24:00,911 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9964052591323852
+2022-01-01 22:24:00,911 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:24:07,089 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9958461680412293
+2022-01-01 22:24:07,089 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:24:07,089 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.04450178146362s
+2022-01-01 22:24:07,089 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:24:07,090 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:24:07,090 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 170
+2022-01-01 22:24:45,741 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.996490749835968
+2022-01-01 22:24:45,741 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:24:51,901 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9957804026603698
+2022-01-01 22:24:51,902 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:24:51,902 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.812498807907104s
+2022-01-01 22:24:51,902 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:24:51,902 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:24:51,902 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 171
+2022-01-01 22:25:30,247 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9965499153137207
+2022-01-01 22:25:30,248 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:25:36,477 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9957758641242981
+2022-01-01 22:25:36,477 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:25:36,477 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.57500147819519s
+2022-01-01 22:25:36,477 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:25:36,477 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:25:36,477 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 172
+2022-01-01 22:26:15,632 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9964974970817566
+2022-01-01 22:26:15,633 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:26:21,822 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9957593474388122
+2022-01-01 22:26:21,823 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:26:21,823 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.34600019454956s
+2022-01-01 22:26:21,823 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:26:21,823 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:26:21,823 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 173
+2022-01-01 22:26:59,322 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.996352822303772
+2022-01-01 22:26:59,323 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:27:05,307 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9957313232421875
+2022-01-01 22:27:05,308 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:27:05,309 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.4855010509491s
+2022-01-01 22:27:05,309 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:27:05,309 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:27:05,309 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 174
+2022-01-01 22:27:41,269 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9961038255691528
+2022-01-01 22:27:41,269 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:27:47,238 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9957619514465332
+2022-01-01 22:27:47,238 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:27:47,239 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 41.929500341415405s
+2022-01-01 22:27:47,239 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:27:47,239 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:27:47,239 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 175
+2022-01-01 22:28:24,862 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9963605890274048
+2022-01-01 22:28:24,862 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:28:30,893 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9957136492729187
+2022-01-01 22:28:30,893 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:28:30,894 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.65500068664551s
+2022-01-01 22:28:30,894 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:28:30,894 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:28:30,894 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 176
+2022-01-01 22:29:07,797 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9966918520927429
+2022-01-01 22:29:07,797 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:29:13,923 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.995651695728302
+2022-01-01 22:29:13,923 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:29:13,924 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.02950096130371s
+2022-01-01 22:29:13,924 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:29:13,924 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:29:13,924 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 177
+2022-01-01 22:29:51,811 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9968705019950866
+2022-01-01 22:29:51,811 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:29:57,816 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9955978398323059
+2022-01-01 22:29:57,817 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:29:57,817 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.89349937438965s
+2022-01-01 22:29:57,817 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:29:57,817 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:29:57,817 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 178
+2022-01-01 22:30:33,402 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9966502652168274
+2022-01-01 22:30:33,403 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:30:39,414 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9959599885940552
+2022-01-01 22:30:39,414 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:30:39,415 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 41.59749937057495s
+2022-01-01 22:30:39,415 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:30:39,415 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:30:39,415 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 179
+2022-01-01 22:31:15,605 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9967349886894226
+2022-01-01 22:31:15,606 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:31:21,711 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9959693880081176
+2022-01-01 22:31:21,712 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:31:21,712 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.29750061035156s
+2022-01-01 22:31:21,712 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:31:21,712 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:31:21,712 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 180
+2022-01-01 22:31:57,278 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9966927599906922
+2022-01-01 22:31:57,278 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:32:03,239 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9959744391441345
+2022-01-01 22:32:03,240 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:32:03,240 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 41.52799892425537s
+2022-01-01 22:32:03,240 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:32:03,240 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:32:03,240 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 181
+2022-01-01 22:32:40,483 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9965195555686951
+2022-01-01 22:32:40,483 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:32:46,606 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9960131044387818
+2022-01-01 22:32:46,606 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:32:46,606 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.36600041389465s
+2022-01-01 22:32:46,606 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:32:46,607 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:32:46,607 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 182
+2022-01-01 22:33:24,545 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9967884607315064
+2022-01-01 22:33:24,545 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:33:30,508 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9960891990661621
+2022-01-01 22:33:30,508 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:33:30,508 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.90149974822998s
+2022-01-01 22:33:30,508 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:33:30,508 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:33:30,508 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 183
+2022-01-01 22:34:06,521 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9971225328445434
+2022-01-01 22:34:06,521 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:34:12,513 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9960952849388123
+2022-01-01 22:34:12,513 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:34:12,514 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.005502462387085s
+2022-01-01 22:34:12,514 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:34:12,514 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:34:12,514 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 184
+2022-01-01 22:34:49,418 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9976909914016724
+2022-01-01 22:34:49,419 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:34:55,382 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9960703973770142
+2022-01-01 22:34:55,383 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:34:55,383 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.86899948120117s
+2022-01-01 22:34:55,383 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:34:55,383 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:34:55,383 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 185
+2022-01-01 22:35:33,419 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9975501365661621
+2022-01-01 22:35:33,419 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:35:39,716 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9960920066833496
+2022-01-01 22:35:39,716 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:35:39,717 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.33349919319153s
+2022-01-01 22:35:39,717 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:35:39,717 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:35:39,717 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 186
+2022-01-01 22:36:10,919 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.998045729637146
+2022-01-01 22:36:10,919 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:36:16,482 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9963698506355285
+2022-01-01 22:36:16,482 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:36:16,483 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 36.76599931716919s
+2022-01-01 22:36:16,483 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:36:16,483 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:36:16,483 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 187
+2022-01-01 22:36:47,670 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9985375442504882
+2022-01-01 22:36:47,670 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:36:53,243 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9963932814598083
+2022-01-01 22:36:53,243 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:36:53,243 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 36.7599995136261s
+2022-01-01 22:36:53,243 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:36:53,243 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:36:53,243 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 188
+2022-01-01 22:37:22,648 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9976475706100464
+2022-01-01 22:37:22,648 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:37:28,199 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9967592692375183
+2022-01-01 22:37:28,199 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:37:28,200 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 34.95650005340576s
+2022-01-01 22:37:28,200 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:37:28,200 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:37:28,200 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 189
+2022-01-01 22:37:58,388 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9977486991882324
+2022-01-01 22:37:58,388 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:38:03,927 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9968190698623657
+2022-01-01 22:38:03,927 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:38:03,927 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 35.72699999809265s
+2022-01-01 22:38:03,927 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:38:03,927 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:38:03,927 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 190
+2022-01-01 22:38:33,795 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.998221863746643
+2022-01-01 22:38:33,795 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:38:39,395 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9970553107261658
+2022-01-01 22:38:39,395 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:38:39,395 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 35.46800088882446s
+2022-01-01 22:38:39,395 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:38:39,395 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:38:39,395 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 191
+2022-01-01 22:39:09,666 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9979581909179688
+2022-01-01 22:39:09,666 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:39:15,245 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9971438155174256
+2022-01-01 22:39:15,245 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:39:15,246 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 35.85049915313721s
+2022-01-01 22:39:15,246 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:39:15,246 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:39:15,246 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 192
+2022-01-01 22:39:45,201 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9981215105056763
+2022-01-01 22:39:45,202 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:39:50,802 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9971634454727173
+2022-01-01 22:39:50,802 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:39:50,802 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 35.55650091171265s
+2022-01-01 22:39:50,802 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:39:50,802 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:39:50,802 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 193
+2022-01-01 22:40:20,675 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9982488851547241
+2022-01-01 22:40:20,675 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:40:26,228 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9971526980400085
+2022-01-01 22:40:26,228 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:40:26,228 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 35.42600083351135s
+2022-01-01 22:40:26,229 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:40:26,229 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:40:26,229 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 194
+2022-01-01 22:40:56,292 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9976097478866577
+2022-01-01 22:40:56,293 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:41:01,888 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9973387832641601
+2022-01-01 22:41:01,889 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:41:01,889 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 35.66049838066101s
+2022-01-01 22:41:01,889 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:41:01,889 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:41:01,889 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 195
+2022-01-01 22:41:32,249 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9979244756698609
+2022-01-01 22:41:32,249 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:41:38,110 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9973315210342407
+2022-01-01 22:41:38,110 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:41:38,110 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 36.22100067138672s
+2022-01-01 22:41:38,110 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:41:38,110 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:41:38,111 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 196
+2022-01-01 22:42:04,963 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9978263664245606
+2022-01-01 22:42:04,963 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:42:10,201 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9973708128929138
+2022-01-01 22:42:10,201 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:42:10,202 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 32.09100365638733s
+2022-01-01 22:42:10,202 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:42:10,202 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:42:10,202 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 197
+2022-01-01 22:42:34,968 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9978919715881348
+2022-01-01 22:42:34,968 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:42:40,397 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9973632936477661
+2022-01-01 22:42:40,397 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:42:40,398 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 30.19602870941162s
+2022-01-01 22:42:40,398 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:42:40,398 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:42:40,398 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 198
+2022-01-01 22:43:10,640 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9977555837631226
+2022-01-01 22:43:10,640 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:43:16,286 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9970832228660583
+2022-01-01 22:43:16,286 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:43:16,287 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 35.88897085189819s
+2022-01-01 22:43:16,288 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:43:16,288 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:43:16,288 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 199
+2022-01-01 22:43:45,023 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9980403079986572
+2022-01-01 22:43:45,023 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:43:50,600 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9971002268791199
+2022-01-01 22:43:50,600 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:43:50,601 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 34.312997341156006s
+2022-01-01 22:43:50,601 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:43:50,601 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:43:50,601 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 200
+2022-01-01 22:44:21,098 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9985034790039062
+2022-01-01 22:44:21,098 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:44:26,646 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9971202712059021
+2022-01-01 22:44:26,647 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:44:26,647 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 36.04599928855896s
+2022-01-01 22:44:26,647 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:44:26,647 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:44:26,647 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 201
+2022-01-01 22:44:56,848 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=3.6546134357452393
+2022-01-01 22:44:56,848 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:45:02,668 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.6785312795639038
+2022-01-01 22:45:02,668 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:45:02,669 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 36.021501779556274s
+2022-01-01 22:45:02,669 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:45:02,669 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:45:02,669 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 202
+2022-01-01 22:45:37,390 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.356262155532837
+2022-01-01 22:45:37,390 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:45:43,421 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.8510295648574828
+2022-01-01 22:45:43,422 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:45:43,422 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 40.75300121307373s
+2022-01-01 22:45:43,422 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:45:43,422 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:45:43,422 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 203
+2022-01-01 22:46:21,549 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.9056864948272705
+2022-01-01 22:46:21,549 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:46:27,397 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.5991736078262329
+2022-01-01 22:46:27,397 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:46:27,397 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.974998474121094s
+2022-01-01 22:46:27,397 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:46:27,398 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:46:27,398 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 204
+2022-01-01 22:47:02,279 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.035713189125061
+2022-01-01 22:47:02,279 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:47:08,321 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.3682669315338134
+2022-01-01 22:47:08,322 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:47:08,323 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 40.92500567436218s
+2022-01-01 22:47:08,323 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:47:08,323 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:47:08,323 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 205
+2022-01-01 22:47:45,524 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0664369611740112
+2022-01-01 22:47:45,524 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:47:51,486 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.2186062307357788
+2022-01-01 22:47:51,486 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:47:51,487 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.163498640060425s
+2022-01-01 22:47:51,487 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:47:51,487 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:47:51,487 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 206
+2022-01-01 22:48:30,766 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0007998132705689
+2022-01-01 22:48:30,767 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:48:36,727 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.1937829303741454
+2022-01-01 22:48:36,727 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:48:36,727 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.24050235748291s
+2022-01-01 22:48:36,728 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:48:36,728 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:48:36,728 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 207
+2022-01-01 22:49:13,405 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9999919013977051
+2022-01-01 22:49:13,405 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:49:19,433 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.1012788343429565
+2022-01-01 22:49:19,433 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:49:19,433 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.70549941062927s
+2022-01-01 22:49:19,433 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:49:19,433 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:49:19,433 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 208
+2022-01-01 22:49:55,035 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0016038312911988
+2022-01-01 22:49:55,035 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:50:01,120 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0471489763259887
+2022-01-01 22:50:01,120 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:50:01,121 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 41.687500953674316s
+2022-01-01 22:50:01,121 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:50:01,121 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:50:01,121 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 209
+2022-01-01 22:50:39,706 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9991547241210937
+2022-01-01 22:50:39,706 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:50:45,845 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0227667636871338
+2022-01-01 22:50:45,845 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:50:45,845 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.723997831344604s
+2022-01-01 22:50:45,846 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:50:45,846 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:50:45,846 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 210
+2022-01-01 22:51:24,820 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9999917144775391
+2022-01-01 22:51:24,820 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:51:30,688 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0093133325576782
+2022-01-01 22:51:30,688 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:51:30,689 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 44.84300374984741s
+2022-01-01 22:51:30,689 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:51:30,689 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:51:30,689 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 211
+2022-01-01 22:52:07,816 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9992374382019042
+2022-01-01 22:52:07,816 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:52:14,034 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0037276277542113
+2022-01-01 22:52:14,035 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:52:14,035 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.34599947929382s
+2022-01-01 22:52:14,035 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:52:14,035 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:52:14,035 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 212
+2022-01-01 22:52:50,936 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9993595314025879
+2022-01-01 22:52:50,936 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:52:56,983 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.001029634475708
+2022-01-01 22:52:56,984 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:52:56,984 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.94899940490723s
+2022-01-01 22:52:56,984 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:52:56,984 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:52:56,984 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 213
+2022-01-01 22:53:33,919 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9990697345733642
+2022-01-01 22:53:33,919 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:53:40,072 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9996025609970093
+2022-01-01 22:53:40,072 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:53:40,072 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.08800029754639s
+2022-01-01 22:53:40,072 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:53:40,072 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:53:40,072 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 214
+2022-01-01 22:54:19,397 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9994389762878418
+2022-01-01 22:54:19,397 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:54:25,428 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9990155305862427
+2022-01-01 22:54:25,428 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:54:25,428 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.356000900268555s
+2022-01-01 22:54:25,428 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:54:25,429 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:54:25,429 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 215
+2022-01-01 22:55:04,359 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9995931453704834
+2022-01-01 22:55:04,359 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:55:10,700 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9989880952835083
+2022-01-01 22:55:10,701 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:55:10,701 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.27200102806091s
+2022-01-01 22:55:10,701 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:55:10,701 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:55:10,701 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 216
+2022-01-01 22:55:51,016 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9995181865692139
+2022-01-01 22:55:51,017 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:55:57,139 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9988804645538331
+2022-01-01 22:55:57,139 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:55:57,140 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.438498973846436s
+2022-01-01 22:55:57,140 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:55:57,140 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:55:57,140 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 217
+2022-01-01 22:56:24,084 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9993210430145264
+2022-01-01 22:56:24,084 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:56:29,341 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9987783308029174
+2022-01-01 22:56:29,341 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:56:29,341 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 32.20150423049927s
+2022-01-01 22:56:29,341 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:56:29,341 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:56:29,341 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 218
+2022-01-01 22:56:59,017 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.999576397895813
+2022-01-01 22:56:59,017 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:57:05,276 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9987248549461365
+2022-01-01 22:57:05,276 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:57:05,277 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 35.93549561500549s
+2022-01-01 22:57:05,277 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:57:05,277 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:57:05,277 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 219
+2022-01-01 22:57:45,658 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9992906217575073
+2022-01-01 22:57:45,658 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:57:51,795 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9990331892967224
+2022-01-01 22:57:51,796 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:57:51,797 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.51950287818909s
+2022-01-01 22:57:51,797 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:57:51,797 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:57:51,797 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 220
+2022-01-01 22:58:29,386 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9994354486465454
+2022-01-01 22:58:29,387 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:58:35,521 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.998898163318634
+2022-01-01 22:58:35,521 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:58:35,522 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.724496603012085s
+2022-01-01 22:58:35,522 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:58:35,522 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:58:35,522 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 221
+2022-01-01 22:59:12,977 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9998347301483155
+2022-01-01 22:59:12,977 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 22:59:19,165 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9989080390930176
+2022-01-01 22:59:19,165 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 22:59:19,165 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.64299917221069s
+2022-01-01 22:59:19,165 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 22:59:19,165 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 22:59:19,165 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 222
+2022-01-01 22:59:58,536 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9997344303131104
+2022-01-01 22:59:58,536 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 23:00:04,614 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9990759139060974
+2022-01-01 23:00:04,614 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 23:00:04,615 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.44950032234192s
+2022-01-01 23:00:04,615 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 23:00:04,615 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 23:00:04,615 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 223
+2022-01-01 23:00:44,515 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9999590520858764
+2022-01-01 23:00:44,515 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 23:00:50,463 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9990637021064759
+2022-01-01 23:00:50,463 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 23:00:50,463 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.848501443862915s
+2022-01-01 23:00:50,464 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 23:00:50,464 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 23:00:50,464 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 224
+2022-01-01 23:01:27,443 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0008110876083374
+2022-01-01 23:01:27,443 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 23:01:33,415 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.999201030254364
+2022-01-01 23:01:33,415 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 23:01:33,415 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.95149898529053s
+2022-01-01 23:01:33,416 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 23:01:33,416 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 23:01:33,416 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 225
+2022-01-01 23:02:09,906 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0001651945114136
+2022-01-01 23:02:09,907 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 23:02:16,015 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.999189911365509
+2022-01-01 23:02:16,016 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 23:02:16,016 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.60050106048584s
+2022-01-01 23:02:16,016 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 23:02:16,016 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 23:02:16,016 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 226
+2022-01-01 23:02:53,202 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0001530590057373
+2022-01-01 23:02:53,202 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 23:02:59,240 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.999617917060852
+2022-01-01 23:02:59,240 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 23:02:59,241 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.22449970245361s
+2022-01-01 23:02:59,241 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 23:02:59,241 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 23:02:59,241 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 227
+2022-01-01 23:03:35,815 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0000183811187744
+2022-01-01 23:03:35,815 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 23:03:41,897 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9996777687072754
+2022-01-01 23:03:41,897 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 23:03:41,898 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 42.65750169754028s
+2022-01-01 23:03:41,898 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 23:03:41,898 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 23:03:41,898 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 228
+2022-01-01 23:04:19,430 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0000903272628785
+2022-01-01 23:04:19,430 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 23:04:25,725 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9996346273422241
+2022-01-01 23:04:25,725 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 23:04:25,726 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.82749938964844s
+2022-01-01 23:04:25,726 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 23:04:25,726 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 23:04:25,726 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 229
+2022-01-01 23:05:05,907 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0000699892044067
+2022-01-01 23:05:05,907 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 23:05:12,147 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9996229181289673
+2022-01-01 23:05:12,148 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 23:05:12,148 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 46.42200064659119s
+2022-01-01 23:05:12,149 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 23:05:12,149 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 23:05:12,149 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 230
+2022-01-01 23:05:51,407 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0000240259170532
+2022-01-01 23:05:51,407 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 23:05:57,652 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9995994906425476
+2022-01-01 23:05:57,652 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 23:05:57,653 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 45.503997802734375s
+2022-01-01 23:05:57,653 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 23:05:57,653 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 23:05:57,653 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 231
+2022-01-01 23:06:35,445 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0001578130722046
+2022-01-01 23:06:35,446 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 23:06:40,929 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.9996072955131531
+2022-01-01 23:06:40,929 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 23:06:40,930 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 43.27650237083435s
+2022-01-01 23:06:40,930 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 23:06:40,930 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 23:06:40,930 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 232
+2022-01-01 23:07:07,365 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=1.0000690450668335
+2022-01-01 23:07:07,365 - G:/naic_csi_2021/tasks/train.py[line:168] - INFO: best_loss=0.5605168013572693
+2022-01-01 23:07:12,506 - G:/naic_csi_2021/tasks/train.py[line:111] - INFO: average_loss=0.999603500843048
+2022-01-01 23:07:12,506 - G:/naic_csi_2021/tasks/train.py[line:172] - INFO: ema_best_loss=0.5605168013572693
+2022-01-01 23:07:12,506 - G:/naic_csi_2021/tasks/train.py[line:174] - INFO: cost 31.576180696487427s
+2022-01-01 23:07:12,506 - G:/naic_csi_2021/tasks/train.py[line:175] - INFO: ###########
+2022-01-01 23:07:12,506 - G:/naic_csi_2021/tasks/train.py[line:150] - INFO: ###########
+2022-01-01 23:07:12,506 - G:/naic_csi_2021/tasks/train.py[line:151] - INFO: epoch 233
