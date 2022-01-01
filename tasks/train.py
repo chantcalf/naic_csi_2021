@@ -165,11 +165,13 @@ def train(cfg: DefaultCfg, x_train, x_test):
 
         model.eval()
         best_loss = validate(best_loss, test_loader, model, criterion, cfg.save_dir, prefix="")
-        LOGGER.info(f"best_loss={best_loss} cost {time.time() - epoch_start_time}s")
+        LOGGER.info(f"best_loss={best_loss}")
         if ema_start:
             ema.apply_shadow()
             ema_best_loss = validate(ema_best_loss, test_loader, model, criterion, cfg.save_dir, prefix="ema_")
+            LOGGER.info(f"ema_best_loss={best_loss}")
             ema.restore()
+        LOGGER.info(f"cost {time.time() - epoch_start_time}s")
         LOGGER.info("###########")
 
 
