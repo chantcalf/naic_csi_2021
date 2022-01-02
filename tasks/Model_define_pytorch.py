@@ -83,7 +83,7 @@ class VQ(nn.Module):
 
     @torch.no_grad()
     def quant(self, x):
-        dist = x.unsqueeze(-1) - self.embed.unsqueeze(0).unsqueeze(1)
+        dist = x.unsqueeze(-2) - self.embed.unsqueeze(0).unsqueeze(1)
         _, ind = dist.pow(2).sum(-1).min(-1)
         bits = self.num_biter.to_bit(ind)
         return bits
@@ -230,7 +230,7 @@ class Encoder(nn.Module):
     def quantize(self, x, s):
         bits_x = self.sq.quant(x)
         bits_s = self.f16.to_bit(s)
-        return torch.cat([bits_s, bits_x])
+        return torch.cat([bits_s, bits_x], -1)
 
     def forward(self, x):
         b = x.size(0)
@@ -263,13 +263,14 @@ class Decoder(nn.Module):
         )
 
     def dequantize(self, x):
-        s = self.f16(x[:, :self.s_bit])
+        s = self.f16.to_float(x[:, :self.s_bit])
         out = self.sq.dequant(x[:, self.s_bit:])
         return out, s
 
     def forward(self, x):
         b = x.size(0)
         out, s = self.dequantize(x)
+        s = s.unsqueeze(-1).unsqueeze(-1)
         out = self.decoder_blocks(out)
         out = out * s * 0.5 + 0.5
         out = torch.clamp(out, 0., 1.)
