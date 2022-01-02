@@ -10,7 +10,7 @@ from torch.nn.utils import clip_grad_norm_
 from torch.optim.lr_scheduler import LambdaLR
 
 from Model_define_pytorch import AutoEncoder, DatasetFolder, MyLoss, DatasetFolderTrain, VQVAE
-from config import Logger, LOG_DIR
+from config import Logger, LOG_DIR, TRAIN_DATA_DIR
 
 os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 
@@ -131,7 +131,7 @@ def validate(best_loss, test_loader, model, criterion, save_dir, model_name, pre
             total_loss += criterion(output, input_tensor).item() * input_tensor.size(0)
             nums += input_tensor.size(0)
         average_loss = total_loss / nums
-        LOGGER.info(f"average_loss={average_loss:.6f}, best_loss=best_loss:.6f")
+        LOGGER.info(f"average_loss={average_loss:.6f}, best_loss={best_loss:.6f}")
         if average_loss < best_loss:
             # torch.save({'state_dict': model.encoder.state_dict(), }, model_encoder_save_path)
             # torch.save({'state_dict': model.decoder.state_dict(), }, model_decoder_save_path)
@@ -195,7 +195,6 @@ def train(cfg: DefaultCfg, x_train, x_test):
         model.eval()
         best_loss = validate(best_loss, test_loader, model, criterion,
                              cfg.save_dir, cfg.model_name, prefix="")
-        LOGGER.info(f"best_loss={best_loss} cost {time.time() - epoch_start_time}s")
         if ema_start:
             ema.apply_shadow()
             ema_best_loss = validate(ema_best_loss, test_loader, model,
