@@ -10,7 +10,7 @@ from torch.nn.utils import clip_grad_norm_
 from torch.optim.lr_scheduler import LambdaLR
 
 from Model_define_pytorch import AutoEncoder, DatasetFolder, MyLoss, DatasetFolderTrain, VQVAE
-from config import Logger, LOG_DIR, TRAIN_DATA_DIR
+from config import Logger, LOG_DIR, TRAIN_DATA_DIR, NUM_WORKERS
 
 os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 
@@ -76,7 +76,7 @@ class DefaultCfg:
     epochs = 1000
     learning_rate = 1e-3
     weight_decay = 1e-5
-    num_workers = 4
+    num_workers = NUM_WORKERS
     feedback_bits = 512
     save_dir = "./Modelsave"
     model_name = "model.pth"

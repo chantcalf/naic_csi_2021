@@ -5,14 +5,14 @@ import numpy as np
 import torch
 
 from Model_define_pytorch import AutoEncoder, DatasetFolder
-from config import TRAIN_DATA_DIR
+from config import TRAIN_DATA_DIR, NUM_WORKERS
 
 
 def eval_encoder():
     # Parameters for training
     os.environ["CUDA_VISIBLE_DEVICES"] = '0'
     batch_size = 64
-    num_workers = 4
+    num_workers = NUM_WORKERS
     # Data parameters
     img_height = 16
     img_width = 32
