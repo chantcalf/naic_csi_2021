@@ -151,22 +151,17 @@ class MixerBlock(nn.Module):
 
 
 class ChannelLinear(nn.Module):
-    def __init__(self, c, dim, outdim):
+    def __init__(self, dim, outdim):
         super().__init__()
         self.fc = nn.Linear(dim, outdim)
-        self.c = c
 
     def forward(self, x):
-        if self.c != len(x.shape):
-            x = x.transpose(self.c, -1)
-        x = self.fc(x)
-        if self.c != len(x.shape):
-            x = x.transpose(self.c, -1).contiguous()
+        x = self.fc(x.transpose(1, 2)).transpose(1, 2)
         return x
 
 
 class VQVAE(nn.Module):
-    def __init__(self, vq_b=9, vq_dim=32, vq_len=56, s_bit=8):
+    def __init__(self, vq_b=8, vq_dim=8, vq_len=63, s_bit=8):
         super().__init__()
         self.s_bit = s_bit
         self.sq = VQ(vq_b, vq_dim)
@@ -175,7 +170,8 @@ class VQVAE(nn.Module):
         self.encoder_blocks = nn.Sequential(
             nn.Linear(256, 128),
             MixerBlock(126, 128, (4., 4.)),
-            ChannelLinear(1, 126, vq_len),
+            ChannelLinear(126, vq_len),
+            MixerBlock(vq_len, 128, (4., 4.)),
             MixerBlock(vq_len, 128, (4., 4.)),
             MixerBlock(vq_len, 128, (4., 4.)),
             nn.Linear(128, vq_dim),
@@ -184,7 +180,9 @@ class VQVAE(nn.Module):
         self.decoder_blocks = nn.Sequential(
             nn.Linear(vq_dim, 256),
             MixerBlock(vq_len, 256, (4., 4.)),
-            ChannelLinear(1, vq_len, 126),
+            ChannelLinear(vq_len, 126),
+            MixerBlock(126, 256, (4., 4.)),
+            MixerBlock(126, 256, (4., 4.)),
             MixerBlock(126, 256, (4., 4.)),
             MixerBlock(126, 256, (4., 4.)),
             nn.Linear(256, 256),
@@ -212,7 +210,7 @@ class VQVAE(nn.Module):
 
 class Encoder(nn.Module):
 
-    def __init__(self, feedback_bits, vq_b=9, vq_dim=32, vq_len=56, s_bit=8):
+    def __init__(self, feedback_bits, vq_b=8, vq_dim=8, vq_len=63, s_bit=8):
         super(Encoder, self).__init__()
         self.s_bit = s_bit
         self.sq = VQ(vq_b, vq_dim)
@@ -221,7 +219,8 @@ class Encoder(nn.Module):
         self.encoder_blocks = nn.Sequential(
             nn.Linear(256, 128),
             MixerBlock(126, 128, (4., 4.)),
-            ChannelLinear(1, 126, vq_len),
+            ChannelLinear(126, vq_len),
+            MixerBlock(vq_len, 128, (4., 4.)),
             MixerBlock(vq_len, 128, (4., 4.)),
             MixerBlock(vq_len, 128, (4., 4.)),
             nn.Linear(128, vq_dim),
@@ -246,7 +245,7 @@ class Encoder(nn.Module):
 
 class Decoder(nn.Module):
 
-    def __init__(self, feedback_bits, vq_b=9, vq_dim=32, vq_len=56, s_bit=8):
+    def __init__(self, feedback_bits, vq_b=8, vq_dim=8, vq_len=63, s_bit=8):
         super(Decoder, self).__init__()
         self.s_bit = s_bit
         self.sq = VQ(vq_b, vq_dim)
@@ -255,7 +254,9 @@ class Decoder(nn.Module):
         self.decoder_blocks = nn.Sequential(
             nn.Linear(vq_dim, 256),
             MixerBlock(vq_len, 256, (4., 4.)),
-            ChannelLinear(1, vq_len, 126),
+            ChannelLinear(vq_len, 126),
+            MixerBlock(126, 256, (4., 4.)),
+            MixerBlock(126, 256, (4., 4.)),
             MixerBlock(126, 256, (4., 4.)),
             MixerBlock(126, 256, (4., 4.)),
             nn.Linear(256, 256),

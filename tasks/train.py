@@ -67,24 +67,28 @@ def set_seed(seed):
 def lr_scheduler(step, warm_up_step, max_step):
     if step < warm_up_step:
         return 1e-2 + (1 - 1e-2) * step / warm_up_step
-    return 1e-2 + (1 - 1e-2) * 0.5 * (1 + math.cos((step - warm_up_step) / (max_step - warm_up_step) * math.pi))
+    return 1e-2 + (1 - 1e-2) * 0.5 * (1 + math.cos((step - warm_up_step) / (max_step * 2 - warm_up_step) * math.pi))
 
 
 class DefaultCfg:
     seed = 1992
-    batch_size = 128
-    epochs = 1000
-    learning_rate = 1e-3
+    batch_size = 64
+    epochs = 700
+    warmup = 1000
+    learning_rate = 5e-4
     weight_decay = 1e-5
+    cycles = 4
+    cycle_decay = 0.9
+    cycle_epochs = 150
     num_workers = NUM_WORKERS
     feedback_bits = 512
     save_dir = "./Modelsave"
     model_name = "model.pth"
-    warmup = 1000
-    vq_b = 9
-    vq_dim = 32
-    vq_len = 56
+    vq_b = 8
+    vq_dim = 8
+    vq_len = 63
     s_bit = 8
+    ema_decay = 0.999
 
 
 def trans_model(cfg):
@@ -154,55 +158,61 @@ def train(cfg: DefaultCfg, x_train, x_test):
         num_workers=cfg.num_workers, pin_memory=True)
 
     # model = AutoEncoder(cfg.feedback_bits)
-    model = VQVAE(cfg.vq_b, cfg.vq_dim, cfg.vq_len, cfg.s_bit)
-    model.to(device)
-    criterion = MyLoss().to(device)
-    optimizer = torch.optim.AdamW(model.parameters(),
-                                  lr=cfg.learning_rate,
-                                  weight_decay=cfg.weight_decay)
-    max_step = len(x_train) // cfg.batch_size * cfg.epochs
-    scheduler = LambdaLR(optimizer=optimizer,
-                         lr_lambda=partial(lr_scheduler,
-                                           warm_up_step=cfg.warmup,
-                                           max_step=max_step))
-    ema = EMA(model, 0.995)
-    ema.register()
-    ema_start = True
-
     best_loss = 1
     ema_best_loss = 1
     LOGGER.info("start train")
-    for epoch in range(cfg.epochs):
-        LOGGER.info("###########")
-        LOGGER.info(f"epoch {epoch}")
-        epoch_start_time = time.time()
-        model.train()
-        for i, input_tensor in enumerate(train_loader):
-            input_tensor = input_tensor.to(device)
-            output, loss1, loss2 = model(input_tensor)
-            loss0 = criterion(output, input_tensor)
-            loss = loss0 + loss1 + loss2 * 0.25
-            optimizer.zero_grad()
-            loss.backward()
-            clip_grad_norm_(model.parameters(), 10.)
-            optimizer.step()
-            scheduler.step()
+    model_path = os.path.join(cfg.save_dir, 'ema_' + cfg.model_name)
+    steps_per_epoch = len(x_train) // cfg.batch_size
+    for cycle in range(cfg.cycles):
+        epochs = cfg.epochs if cycle == 0 else cfg.cycle_epochs
+        model = VQVAE(cfg.vq_b, cfg.vq_dim, cfg.vq_len, cfg.s_bit)
+        if cycle > 0:
+            model.load_state_dict(torch.load(model_path))
+        model.to(device)
+        criterion = MyLoss().to(device)
+        optimizer = torch.optim.AdamW(model.parameters(),
+                                      lr=cfg.learning_rate,
+                                      weight_decay=cfg.weight_decay)
+        max_step = steps_per_epoch * epochs
+        scheduler = LambdaLR(optimizer=optimizer,
+                             lr_lambda=partial(lr_scheduler,
+                                               warm_up_step=cfg.warmup,
+                                               max_step=max_step))
+        ema = EMA(model, cfg.ema_decay)
+        ema.register()
+        ema_start = True
+        
+        for epoch in range(epochs):
+            LOGGER.info("###########")
+            LOGGER.info(f"epoch {epoch}")
+            epoch_start_time = time.time()
+            model.train()
+            for i, input_tensor in enumerate(train_loader):
+                input_tensor = input_tensor.to(device)
+                output, loss1, loss2 = model(input_tensor)
+                loss0 = criterion(output, input_tensor)
+                loss = loss0 + loss1 + loss2 * 0.25
+                optimizer.zero_grad()
+                loss.backward()
+                clip_grad_norm_(model.parameters(), 10.)
+                optimizer.step()
+                scheduler.step()
+                if ema_start:
+                    ema.update()
+                if i == 0:
+                    LOGGER.info(f'Epoch: [epoch]\t Loss {loss0:.6f} Loss2 {loss2:.6f}')
+    
+            model.eval()
+            best_loss = validate(best_loss, test_loader, model, criterion,
+                                 cfg.save_dir, cfg.model_name, prefix="")
             if ema_start:
-                ema.update()
-            if i == 0:
-                LOGGER.info(f'Epoch: [epoch]\t Loss {loss0:.6f} Loss2 {loss2:.6f}')
-
-        model.eval()
-        best_loss = validate(best_loss, test_loader, model, criterion,
-                             cfg.save_dir, cfg.model_name, prefix="")
-        if ema_start:
-            ema.apply_shadow()
-            ema_best_loss = validate(ema_best_loss, test_loader, model,
-                                     criterion, cfg.save_dir, cfg.model_name,
-                                     prefix="ema_")
-            ema.restore()
-        LOGGER.info(f"cost {time.time() - epoch_start_time}s")
-        LOGGER.info("###########")
+                ema.apply_shadow()
+                ema_best_loss = validate(ema_best_loss, test_loader, model,
+                                         criterion, cfg.save_dir, cfg.model_name,
+                                         prefix="ema_")
+                ema.restore()
+            LOGGER.info(f"cost {time.time() - epoch_start_time}s")
+            LOGGER.info("###########")
 
     trans_model(cfg)
 
