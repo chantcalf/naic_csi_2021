@@ -43,27 +43,21 @@ class FloatBiter(nn.Module):
     def __init__(self, b):
         super().__init__()
         self.b = b
-        int_base = 2 ** torch.arange(2)
-        dot_base = 2 ** torch.arange(1, b - 1)
-        self.register_buffer("int_base", int_base.unsqueeze(0).long())
+        dot_base = 2 ** torch.arange(0, b)
         self.register_buffer("dot_base", dot_base.unsqueeze(0).float())
 
     @torch.no_grad()
     def to_bit(self, x):
+        x = x.clamp(1., 7.38)
         x = x.unsqueeze(-1)
-        int_x = torch.log2(x).long()
-        int_code = int_x // self.int_base % 2
-        float_x = x / (2 ** int_x).float() - 1
-        float_code = (float_x * self.dot_base).long() % 2
-        return torch.cat([int_code, float_code], -1)
+        x = torch.log(x)
+        x = (x * self.dot_base).long() % 2
+        return x
 
     @torch.no_grad()
     def to_float(self, x):
-        int_code, float_code = x[:, :2], x[:, 2:]
-        int_x = (int_code * self.int_base).sum(-1)
-        int_x = (2 ** int_x).float()
-        float_x = (float_code.float() / self.dot_base).sum(-1)
-        return (float_x + 1) * int_x
+        x = (x.float() / self.dot_base).sum(-1)
+        return torch.exp(x)
 
     def forward(self, x):
         bits = self.to_bit(x)
@@ -95,30 +89,34 @@ class VQ(nn.Module):
 
     def forward(self, x):
         # x: (b, n, dim)
-        dist = x.unsqueeze(-2) - self.embed.unsqueeze(0).unsqueeze(1)
-        _, ind = dist.pow(2).sum(-1).min(-1)  # (b, n)
+        dist = self.dist(x.unsqueeze(-2), self.embed.unsqueeze(0).unsqueeze(1))
+        _, ind = dist.min(-1)  # (b, n)
         qx = F.embedding(ind, self.embed)  # (b, n, dim)
 
-        loss1 = (qx - x.detach()).pow(2).mean()
-        loss2 = (qx.detach() - x).pow(2).mean()
+        loss1 = self.dist(qx, x.detach()).mean()
+        loss2 = self.dist(qx.detach(), x).mean()
         return (qx - x).detach() + x, loss1, loss2
+
+    @staticmethod
+    def dist(x, y):
+        return (x - y).pow(2).mean(-1)
 
 
 class MyLoss(nn.Module):
-    def __init__(self, reduce=True):
+    def __init__(self):
         super().__init__()
         self.eps = 1e-6
-        self.reduce = reduce
 
     def forward(self, pre, label):
-        pre = pre - 0.5
-        label = label - 0.5
-        dif = (pre - label).pow(2).sum(3).sum(2).sum(1)
-        base = label.pow(2).sum(3).sum(2).sum(1)
+        # pre = pre - 0.5
+        # label = label - 0.5
+        b = pre.size(0)
+        pre = pre.view(b, -1)
+        label = label.view(b, -1)
+        dif = (pre - label).pow(2).sum(-1)
+        base = label.pow(2).sum(-1)
         # base = torch.clamp(base, self.eps)
         loss = dif / base
-        if self.reduce:
-            loss = loss.mean()
         return loss
 
 
@@ -160,13 +158,9 @@ class ChannelLinear(nn.Module):
         return x
 
 
-class VQVAE(nn.Module):
-    def __init__(self, vq_b=8, vq_dim=8, vq_len=63, s_bit=8):
+class EncoderModel(nn.Module):
+    def __init__(self, vq_dim=8, vq_len=63):
         super().__init__()
-        self.s_bit = s_bit
-        self.sq = VQ(vq_b, vq_dim)
-        self.f16 = FloatBiter(s_bit)
-
         self.encoder_blocks = nn.Sequential(
             nn.Linear(256, 128),
             MixerBlock(126, 128, (4., 4.)),
@@ -177,6 +171,14 @@ class VQVAE(nn.Module):
             nn.Linear(128, vq_dim),
         )
 
+    def forward(self, x):
+        return self.encoder_blocks(x)
+
+
+class DecoderModel(nn.Module):
+    def __init__(self, vq_b=8, vq_dim=8, vq_len=63):
+        super().__init__()
+        self.sq = VQ(vq_b, vq_dim)
         self.decoder_blocks = nn.Sequential(
             nn.Linear(vq_dim, 256),
             MixerBlock(vq_len, 256, (4., 4.)),
@@ -186,26 +188,65 @@ class VQVAE(nn.Module):
             MixerBlock(126, 256, (4., 4.)),
             MixerBlock(126, 256, (4., 4.)),
             nn.Linear(256, 256),
-            nn.Tanh()
+            nn.Sigmoid()
         )
 
     def forward(self, x):
+        return self.decoder_blocks(x) - 0.5
+
+
+class VQVAE(nn.Module):
+    def __init__(self, vq_b=8, vq_dim=8, vq_len=63, s_bit=8):
+        super().__init__()
+        self.s_bit = s_bit
+        self.f16 = FloatBiter(s_bit)
+        self.encoder = EncoderModel(vq_dim, vq_len)
+        self.decoder = DecoderModel(vq_b, vq_dim, vq_len)
+        self.criterion = MyLoss()
+
+    def preprocess(self, x):
         b = x.size(0)
         x = x - 0.5
         x = x.permute(0, 2, 3, 1).contiguous().view(b, 126, 256)
         s = torch.norm(x.view(b, -1), dim=1)
-        s = torch.clamp(s, 1., 7.99)
+        return x, s
+
+    def forward_train(self, x):
+        x, s = self.preprocess(x)
         s = self.f16(s)
         s = s.unsqueeze(-1).unsqueeze(-1)
         x = x / s
-        x = self.encoder_blocks(x)
-        qx, loss1, loss2 = self.sq(x)
-        out = self.decoder_blocks(qx)
-        out = out * s * 0.5 + 0.5
-        out = out.view(b, 126, 128, 2).permute(0, 3, 1, 2).contiguous()
-        if self.training:
-            return out, loss1, loss2
-        return out
+        y = self.encoder(x)
+        qx, loss1, loss2 = self.decoder.sq(y)
+        y = self.decoder(qx)
+        loss = self.criterion(y, x).mean()
+        return loss, loss1, loss2
+
+    def forward_pre(self, x, s):
+        bs = self.f16.to_bit(s)
+        s = self.f16.to_float(bs)
+        s = s.unsqueeze(-1).unsqueeze(-1)
+        x = x / s
+        y = self.encoder(x)
+        bx = self.decoder.sq.quant(y)
+        qx = self.decoder.sq.dequant(bx)
+        y = self.decoder(qx)
+        loss = self.criterion(y, x).mean()
+        return torch.cat([bs, bx], -1), loss
+
+    def forward(self, x):
+        x, s = self.preprocess(x)
+        s = self.f16.to_bit(s)
+        s = self.f16.to_float(s)
+        s = s.unsqueeze(-1).unsqueeze(-1)
+        x = x / s
+        y = self.encoder(x)
+        y = self.decoder.sq.quant(y)
+        y = self.decoder.sq.dequant(y)
+        y = self.decoder(y)
+        y = (y * s + 0.5).clamp(0., 1.)
+        y = y.view(x.size(0), 126, 128, 2).permute(0, 3, 1, 2).contiguous()
+        return y
 
 
 class Encoder(nn.Module):
@@ -213,34 +254,19 @@ class Encoder(nn.Module):
     def __init__(self, feedback_bits, vq_b=8, vq_dim=8, vq_len=63, s_bit=8):
         super(Encoder, self).__init__()
         self.s_bit = s_bit
-        self.sq = VQ(vq_b, vq_dim)
-        self.f16 = FloatBiter(s_bit)
-
-        self.encoder_blocks = nn.Sequential(
-            nn.Linear(256, 128),
-            MixerBlock(126, 128, (4., 4.)),
-            ChannelLinear(126, vq_len),
-            MixerBlock(vq_len, 128, (4., 4.)),
-            MixerBlock(vq_len, 128, (4., 4.)),
-            MixerBlock(vq_len, 128, (4., 4.)),
-            nn.Linear(128, vq_dim),
-        )
-
-    def quantize(self, x, s):
-        bits_x = self.sq.quant(x)
-        bits_s = self.f16.to_bit(s)
-        return torch.cat([bits_s, bits_x], -1)
+        self.model = VQVAE(vq_b, vq_dim, vq_len, s_bit)
 
     def forward(self, x):
-        b = x.size(0)
-        x = x - 0.5
-        x = x.permute(0, 2, 3, 1).contiguous().view(b, 126, 256)
-        s = torch.norm(x.view(b, -1), dim=1)
-        s = torch.clamp(s, 1., 7.99)
-        s = self.f16(s)
-        x = x / s.unsqueeze(-1).unsqueeze(-1)
-        x = self.encoder_blocks(x)
-        return self.quantize(x, s)
+        x, s = self.model.preprocess(x)
+        best_bx, best_loss = self.model.forward_pre(x, s)
+        for r in [0.9, 0.95, 1.05, 1.1]:
+            si = s * r
+            bx, loss = self.model.forward_pre(x, si)
+            mask = (best_loss <= loss).long().unsqueeze(-1)
+            best_bx = best_bx * mask + bx * (1 - mask)
+            mask = mask.squeeze(-1).float()
+            best_loss = best_loss * mask + loss * (1 - mask)
+        return best_bx
 
 
 class Decoder(nn.Module):
@@ -248,33 +274,20 @@ class Decoder(nn.Module):
     def __init__(self, feedback_bits, vq_b=8, vq_dim=8, vq_len=63, s_bit=8):
         super(Decoder, self).__init__()
         self.s_bit = s_bit
-        self.sq = VQ(vq_b, vq_dim)
+        self.decoder = DecoderModel(vq_b, vq_dim, vq_len)
         self.f16 = FloatBiter(s_bit)
-
-        self.decoder_blocks = nn.Sequential(
-            nn.Linear(vq_dim, 256),
-            MixerBlock(vq_len, 256, (4., 4.)),
-            ChannelLinear(vq_len, 126),
-            MixerBlock(126, 256, (4., 4.)),
-            MixerBlock(126, 256, (4., 4.)),
-            MixerBlock(126, 256, (4., 4.)),
-            MixerBlock(126, 256, (4., 4.)),
-            nn.Linear(256, 256),
-            nn.Tanh()
-        )
 
     def dequantize(self, x):
         s = self.f16.to_float(x[:, :self.s_bit])
-        out = self.sq.dequant(x[:, self.s_bit:])
+        out = self.decoder.sq.dequant(x[:, self.s_bit:])
         return out, s
 
     def forward(self, x):
         b = x.size(0)
         out, s = self.dequantize(x)
         s = s.unsqueeze(-1).unsqueeze(-1)
-        out = self.decoder_blocks(out)
-        out = out * s * 0.5 + 0.5
-        out = torch.clamp(out, 0., 1.)
+        out = self.decoder(out)
+        out = (out * s + 0.5).clamp(0., 1.)
         out = out.view(b, 126, 128, 2).permute(0, 3, 1, 2).contiguous()
         return out
 
@@ -288,12 +301,12 @@ class DatasetFolderTrain(Dataset):
     def __getitem__(self, index):
         if self.training:
             data = copy.deepcopy(self.matdata[index])
-            if random.random() < 0.2:
+            if random.random() < 0.25:
                 data = 1 - data
-            if random.random() < 0.2:
+            if random.random() < 0.25:
                 data = data.reshape(2, 126, 2, 64)
                 data = np.concatenate([data[:, :, 1], data[:, :, 0]], -1)
-            if random.random() < 0.2:
+            if random.random() < 0.25:
                 data = np.concatenate([data[1:2], data[0:1]], 0)
             return data
 

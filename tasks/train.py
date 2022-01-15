@@ -1,4 +1,3 @@
-import math
 import os
 import time
 from functools import partial
@@ -67,7 +66,8 @@ def set_seed(seed):
 def lr_scheduler(step, warm_up_step, max_step):
     if step < warm_up_step:
         return 1e-2 + (1 - 1e-2) * step / warm_up_step
-    return 1e-2 + (1 - 1e-2) * 0.5 * (1 + math.cos((step - warm_up_step) / (max_step * 2 - warm_up_step) * math.pi))
+    return 1.
+    # return 1e-2 + (1 - 1e-2) * 0.5 * (1 + math.cos((step - warm_up_step) / (max_step * 2 - warm_up_step) * math.pi))
 
 
 class DefaultCfg:
@@ -78,7 +78,7 @@ class DefaultCfg:
     learning_rate = 5e-4
     weight_decay = 1e-5
     cycles = 4
-    cycle_decay = 0.9
+    cycle_decay = 0.95
     cycle_epochs = 150
     num_workers = NUM_WORKERS
     feedback_bits = 512
@@ -92,16 +92,13 @@ class DefaultCfg:
 
 
 def trans_model(cfg):
+    save_model = AutoEncoder(cfg.feedback_bits)
     model_name = os.path.join(cfg.save_dir, "ema_" + cfg.model_name)
     model = VQVAE(cfg.vq_b, cfg.vq_dim, cfg.vq_len, cfg.s_bit)
     model.load_state_dict(torch.load(model_name))
-    save_model = AutoEncoder(cfg.feedback_bits)
-    save_model.encoder.encoder_blocks = model.encoder_blocks
-    save_model.encoder.sq = model.sq
-    save_model.encoder.f16 = model.f16
-    save_model.decoder.decoder_blocks = model.decoder_blocks
-    save_model.decoder.sq = model.sq
-    save_model.decoder.f16 = model.f16
+    save_model.encoder.model = model
+    save_model.decoder.decoder = model.decoder
+
     model_encoder_save_path = os.path.join(cfg.save_dir, "encoder.pth.tar")
     model_decoder_save_path = os.path.join(cfg.save_dir, "decoder.pth.tar")
     torch.save({'state_dict': save_model.encoder.state_dict(), }, model_encoder_save_path)
@@ -132,7 +129,7 @@ def validate(best_loss, test_loader, model, criterion, save_dir, model_name, pre
         for i, input_tensor in enumerate(test_loader):
             input_tensor = input_tensor.cuda()
             output = model(input_tensor)
-            total_loss += criterion(output, input_tensor).item() * input_tensor.size(0)
+            total_loss += criterion(output - 0.5, input_tensor - 0.5).sum().item()
             nums += input_tensor.size(0)
         average_loss = total_loss / nums
         LOGGER.info(f"average_loss={average_loss:.6f}, best_loss={best_loss:.6f}")
@@ -171,7 +168,7 @@ def train(cfg: DefaultCfg, x_train, x_test):
         model.to(device)
         criterion = MyLoss().to(device)
         optimizer = torch.optim.AdamW(model.parameters(),
-                                      lr=cfg.learning_rate,
+                                      lr=cfg.learning_rate * (cfg.cycle_decay ** cycle),
                                       weight_decay=cfg.weight_decay)
         max_step = steps_per_epoch * epochs
         scheduler = LambdaLR(optimizer=optimizer,
@@ -181,7 +178,7 @@ def train(cfg: DefaultCfg, x_train, x_test):
         ema = EMA(model, cfg.ema_decay)
         ema.register()
         ema_start = True
-        
+
         for epoch in range(epochs):
             LOGGER.info("###########")
             LOGGER.info(f"epoch {epoch}")
@@ -189,8 +186,7 @@ def train(cfg: DefaultCfg, x_train, x_test):
             model.train()
             for i, input_tensor in enumerate(train_loader):
                 input_tensor = input_tensor.to(device)
-                output, loss1, loss2 = model(input_tensor)
-                loss0 = criterion(output, input_tensor)
+                loss0, loss1, loss2 = model.forward_train(input_tensor)
                 loss = loss0 + loss1 + loss2 * 0.25
                 optimizer.zero_grad()
                 loss.backward()
@@ -201,7 +197,7 @@ def train(cfg: DefaultCfg, x_train, x_test):
                     ema.update()
                 if i == 0:
                     LOGGER.info(f'Epoch: [epoch]\t Loss {loss0:.6f} Loss2 {loss2:.6f}')
-    
+
             model.eval()
             best_loss = validate(best_loss, test_loader, model, criterion,
                                  cfg.save_dir, cfg.model_name, prefix="")
