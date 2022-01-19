@@ -1,5 +1,6 @@
 import os
 import time
+import math
 from functools import partial
 
 import numpy as np
@@ -66,8 +67,8 @@ def set_seed(seed):
 def lr_scheduler(step, warm_up_step, max_step):
     if step < warm_up_step:
         return 1e-2 + (1 - 1e-2) * step / warm_up_step
-    return 1.
-    # return 1e-2 + (1 - 1e-2) * 0.5 * (1 + math.cos((step - warm_up_step) / (max_step * 2 - warm_up_step) * math.pi))
+    # return 1.
+    return 0.75 + (1 - 0.75) * 0.5 * (1 + math.cos((step - warm_up_step) / (max_step - warm_up_step) * math.pi))
 
 
 class DefaultCfg:
@@ -75,11 +76,11 @@ class DefaultCfg:
     batch_size = 64
     epochs = 700
     warmup = 1000
-    learning_rate = 5e-4
-    weight_decay = 1e-5
+    learning_rate = 6e-4
+    weight_decay = 1e-1
     cycles = 4
-    cycle_decay = 0.95
-    cycle_epochs = 150
+    cycle_decay = 0.9
+    cycle_epochs = 200
     num_workers = NUM_WORKERS
     feedback_bits = 512
     save_dir = "./Modelsave"

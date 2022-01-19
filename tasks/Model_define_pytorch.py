@@ -231,7 +231,7 @@ class VQVAE(nn.Module):
         bx = self.decoder.sq.quant(y)
         qx = self.decoder.sq.dequant(bx)
         y = self.decoder(qx)
-        loss = self.criterion(y, x).mean()
+        loss = self.criterion(y, x).mean(-1)
         return torch.cat([bs, bx], -1), loss
 
     def forward(self, x):
@@ -301,9 +301,9 @@ class DatasetFolderTrain(Dataset):
     def __getitem__(self, index):
         if self.training:
             data = copy.deepcopy(self.matdata[index])
-            if random.random() < 0.25:
+            if random.random() < 0.2:
                 data = 1 - data
-            if random.random() < 0.25:
+            if random.random() < 0.2:
                 data = data.reshape(2, 126, 2, 64)
                 data = np.concatenate([data[:, :, 1], data[:, :, 0]], -1)
             if random.random() < 0.25:
