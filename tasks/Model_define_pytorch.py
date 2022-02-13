@@ -89,9 +89,7 @@ class VQ(nn.Module):
 
     def forward(self, x):
         # x: (b, n, dim)
-        # dist = self.dist(x.unsqueeze(-2), self.embed.unsqueeze(0).unsqueeze(1))
-        dist = x.pow(2).sum(-1).unsqueeze(-1) + self.embed.pow(2).sum(-1).unsqueeze(0).unsqueeze(1)
-        dist = dist - x @ self.embed.transpose(0, 1) * 2 
+        dist = self.dist(x.unsqueeze(-2), self.embed.unsqueeze(0).unsqueeze(1))
         _, ind = dist.min(-1)  # (b, n)
         qx = F.embedding(ind, self.embed)  # (b, n, dim)
 

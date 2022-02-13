@@ -1,6 +1,6 @@
+import math
 import os
 import time
-import math
 from functools import partial
 
 import numpy as np
@@ -68,16 +68,16 @@ def lr_scheduler(step, warm_up_step, max_step):
     if step < warm_up_step:
         return 1e-2 + (1 - 1e-2) * step / warm_up_step
     # return 1.
-    return 0.5 + (1 - 0.5) * 0.5 * (1 + math.cos((step - warm_up_step) / (max_step - warm_up_step) * math.pi))
+    return 0.75 + (1 - 0.75) * 0.5 * (1 + math.cos((step - warm_up_step) / (max_step - warm_up_step) * math.pi))
 
 
 class DefaultCfg:
     seed = 1992
     batch_size = 64
-    epochs = 1000
+    epochs = 700
     warmup = 1000
     learning_rate = 6e-4
-    weight_decay = 0.05
+    weight_decay = 1e-1
     cycles = 4
     cycle_decay = 0.9
     cycle_epochs = 200
@@ -89,7 +89,7 @@ class DefaultCfg:
     vq_dim = 8
     vq_len = 63
     s_bit = 8
-    ema_decay = 0.9995
+    ema_decay = 0.999
 
 
 def trans_model(cfg):
