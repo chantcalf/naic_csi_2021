@@ -1,4 +1,8 @@
-manas队伍
+比赛链接：https://www.heywhale.com/home/competition/61b810c9902a13001708eb21
+
+Manas队伍：初赛Rank1
+chantcalf: https://github.com/chantcalf
+wqh17101: https://github.com/wqh17101
 
 
 1. 必要的代码级样例展示
